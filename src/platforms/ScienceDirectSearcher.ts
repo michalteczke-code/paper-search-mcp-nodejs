@@ -1,4 +1,4 @@
-/**
+﻿/**
  * ScienceDirect (Elsevier) Searcher
  * 
  * Documentation: https://dev.elsevier.com/
@@ -82,8 +82,8 @@ export class ScienceDirectSearcher extends PaperSource {
 
 constructor(apiKey?: string) {
     const resolvedKey = apiKey || process.env.ELSEVIER_API_KEY;
-    console.error("[ScienceDirect] APIKey:", resolvedKey ? "✅ TAK" : "❌ BRAK");
-    console.error("[ScienceDirect] Insttoken:", process.env.ELSEVIER_INSTTOKEN ? "✅ TAK" : "❌ BRAK");
+    console.error("[ScienceDirect] APIKey:", resolvedKey ? "âś… TAK" : "âťŚ BRAK");
+    console.error("[ScienceDirect] Insttoken:", process.env.ELSEVIER_INSTTOKEN ? "âś… TAK" : "âťŚ BRAK");
     super('sciencedirect', 'https://api.elsevier.com', resolvedKey);
 
     this.client = axios.create({
@@ -164,7 +164,6 @@ constructor(apiKey?: string) {
 
       this.quotaManager.incrementUsage('sciencedirect');
 
-      console.error('[ScienceDirect] response.data:', JSON.stringify(response.data).substring(0, 500));
       const results = response.data?.results || [];
 
       for (const result of results) {
@@ -387,7 +386,7 @@ constructor(apiKey?: string) {
   }
 
   /**
-   * 获取引用此论文的文献列表(通过Crossref/OpenCitations)
+   * čŽ·ĺŹ–ĺĽ•ç”¨ć­¤č®şć–‡çš„ć–‡çŚ®ĺ—čˇ¨(é€ščż‡Crossref/OpenCitations)
    */
   async getCitations(paperId: string): Promise<Paper[]> {
     try {
@@ -408,7 +407,7 @@ constructor(apiKey?: string) {
   }
 
   /**
-   * 获取论文的参考文献列表(通过Crossref)
+   * čŽ·ĺŹ–č®şć–‡çš„ĺŹ‚č€ć–‡çŚ®ĺ—čˇ¨(é€ščż‡Crossref)
    */
   async getReferences(paperId: string): Promise<Paper[]> {
     try {
@@ -428,3 +427,4 @@ constructor(apiKey?: string) {
     }
   }
 }
+
