@@ -80,18 +80,22 @@ export class ScienceDirectSearcher extends PaperSource {
   private rateLimiter: RateLimiter;
   private quotaManager: QuotaManager;
 
-  constructor(apiKey?: string) {
-    super('sciencedirect', 'https://api.elsevier.com', apiKey);
+constructor(apiKey?: string) {
+    const resolvedKey = apiKey || process.env.ELSEVIER_API_KEY;
+    console.error("[ScienceDirect] APIKey:", resolvedKey ? "✅ TAK" : "❌ BRAK");
+    console.error("[ScienceDirect] Insttoken:", process.env.ELSEVIER_INSTTOKEN ? "✅ TAK" : "❌ BRAK");
+    super('sciencedirect', 'https://api.elsevier.com', resolvedKey);
 
     this.client = axios.create({
       baseURL: 'https://api.elsevier.com',
       timeout: TIMEOUTS.DEFAULT,
       headers: {
-        'Accept': 'application/json',
-        'User-Agent': USER_AGENT,
-        ...(apiKey ? { 'X-ELS-APIKey': apiKey } : {})
-      }
-    });
+      'Accept': 'application/json',
+      'User-Agent': USER_AGENT,
+      ...(resolvedKey ? { 'X-ELS-APIKey': resolvedKey } : {}),
+      ...(process.env.ELSEVIER_INSTTOKEN ? { 'X-ELS-Insttoken': process.env.ELSEVIER_INSTTOKEN } : {})
+  }
+});
 
     // Elsevier rate limits:
     // - Without key: 20 requests per minute
@@ -100,7 +104,8 @@ export class ScienceDirectSearcher extends PaperSource {
 
     this.rateLimiter = new RateLimiter({
       requestsPerSecond,
-      burstCapacity: apiKey ? 20 : 5
+      burstCapacity: apiKey ? 20 : 5,
+      debug: false
     });
 
     this.quotaManager = QuotaManager.getInstance();
@@ -159,6 +164,7 @@ export class ScienceDirectSearcher extends PaperSource {
 
       this.quotaManager.incrementUsage('sciencedirect');
 
+      console.error('[ScienceDirect] response.data:', JSON.stringify(response.data).substring(0, 500));
       const results = response.data?.results || [];
 
       for (const result of results) {
@@ -216,7 +222,7 @@ export class ScienceDirectSearcher extends PaperSource {
         paperId: result.pii || `scidir_${Date.now()}`,
         title: result.title || 'No title',
         authors: authors,
-        abstract: '',
+        abstract: result.abstract || '',
         doi: result.doi,
         publishedDate: publishedDate,
         url: result.uri,

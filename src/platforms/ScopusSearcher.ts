@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Scopus (Elsevier) Searcher
  * 
  * Documentation: https://dev.elsevier.com/documentation/SCOPUSSearchAPI.wadl
@@ -87,6 +87,7 @@ interface ScopusEntry {
   'fund-sponsor'?: string;
   'openaccess'?: string;
   'openaccessFlag'?: boolean;
+  'dc:description'?: string;
 }
 
 interface ScopusAbstractResponse {
@@ -133,11 +134,10 @@ export class ScopusSearcher extends PaperSource {
   private quotaManager: QuotaManager;
   private searchApiKey?: string;
   private elsevierApiKey?: string;
-
-  constructor(apiKey?: string, searchApiKey?: string) {
+constructor(apiKey?: string, searchApiKey?: string) {
     super('scopus', 'https://api.elsevier.com', apiKey);
 
-    // Support two API keys: one for search, one for other operations
+    // Poprawne przypisanie kluczy - NAJPIERW przypisujemy
     this.elsevierApiKey = apiKey || process.env.ELSEVIER_API_KEY;
     this.searchApiKey = searchApiKey || process.env.SCOPUS_SEARCH_API_KEY || this.elsevierApiKey;
 
@@ -151,14 +151,12 @@ export class ScopusSearcher extends PaperSource {
       }
     });
 
-    // Scopus rate limits (same as Elsevier):
-    // - Without key: 20 requests per minute
-    // - With key: 10 requests per second (600 per minute)
     const requestsPerSecond = this.searchApiKey ? 10 : 0.33;
-
+    
     this.rateLimiter = new RateLimiter({
       requestsPerSecond,
-      burstCapacity: this.searchApiKey ? 20 : 5
+      burstCapacity: apiKey ? 20 : 5,
+      debug: false
     });
 
     this.quotaManager = QuotaManager.getInstance();
@@ -168,18 +166,23 @@ export class ScopusSearcher extends PaperSource {
     });
   }
 
-  async search(query: string, options: SearchOptions = {}): Promise<Paper[]> {
+async search(query: string, options: SearchOptions = {}): Promise<Paper[]> {
     const customOptions = options as any;
-    if (!this.apiKey) {
+    if (!this.searchApiKey) {
       throw new Error('Scopus API key is required');
     }
-
-    const maxResults = Math.min(options.maxResults || 10, 25); // Scopus max is 25 per request
+    // Limit 25 per strona (twarde ograniczenie Scopus Starter API).
+    // Paginacja jest obsĹ‚ugiwana po stronie server.js przez parametr start.
+    const countPerPage = 25;
+    const startIndex = customOptions.start || 0;
     const papers: Paper[] = [];
 
     try {
-      // Build Scopus search query
-      let searchQuery = `TITLE-ABS-KEY(${query})`;
+      // JeĹ›li query juĹĽ zawiera field tag (TITLE-ABS-KEY, TS=, itp.) â€” uĹĽywamy go wprost.
+      // Bez tego sprawdzenia MCP owijaĹ‚oby gotowe zapytanie w dodatkowe TITLE-ABS-KEY(),
+      // co dawaĹ‚o TITLE-ABS-KEY(TITLE-ABS-KEY(...)) â€” bĹ‚Ä…d "Unmatched quote" i 0 wynikĂłw.
+      const hasFieldTag = /^(TITLE-ABS-KEY|TITLE|ABS|KEY|AUTH|AFFIL|SRCTITLE|DOCTYPE|SUBJAREA)\s*\(/i.test(query.trim());
+      let searchQuery = hasFieldTag ? query : `TITLE-ABS-KEY(${query})`;
       
       if (options.author) {
         searchQuery += ` AND AUTHOR(${options.author})`;
@@ -227,22 +230,51 @@ export class ScopusSearcher extends PaperSource {
       await this.rateLimiter.waitForPermission();
       this.quotaManager.checkQuota('scopus');
 
-      const response = await ErrorHandler.retryWithBackoff(
-        () => this.client.get<ScopusSearchResponse>('/content/search/scopus', {
-          params: {
-            query: searchQuery,
-            count: maxResults,
-            start: 0,
-            view: 'COMPLETE',
-            field: 'dc:identifier,dc:title,dc:creator,prism:publicationName,prism:coverDate,prism:doi,prism:url,prism:volume,prism:issueIdentifier,prism:pageRange,citedby-count,dc:description,authkeywords,author,affiliation,openaccess,eid'
+      // Scopus API wymaga precyzyjnego enkodowania URL â€” axios enkoduje nawiasy
+      // jako %28/%29 co powoduje INVALID_INPUT. UĹĽywamy natywnego https.request.
+      const encodeQuery = (q: string): string => q
+        .replace(/"/g, '%22')
+        .replace(/\s(AND|OR|NOT)\s/g, '%20$1%20')
+        .replace(/ /g, '+');
+
+      const https = await import('https');
+      const sortParam = customOptions.sort || 'relevancy';
+      const qs = [
+        `query=${encodeQuery(searchQuery)}`,
+        `count=${countPerPage}`,
+        `start=${startIndex}`,
+        `sort=${sortParam}`,
+        `view=STANDARD`,
+        `field=dc:identifier,dc:title,dc:creator,prism:publicationName,prism:coverDate,prism:doi,citedby-count,author,affiliation,openaccess,eid,dc:description`
+      ].join('&');
+
+      const scopusData: ScopusSearchResponse = await new Promise((resolve, reject) => {
+        const req = https.default.request({
+          hostname: 'api.elsevier.com',
+          path: `/content/search/scopus?${qs}`,
+          method: 'GET',
+          headers: {
+            'Accept': 'application/json',
+            'User-Agent': USER_AGENT,
+            'X-ELS-APIKey': this.searchApiKey!,
+            ...(process.env.ELSEVIER_INSTTOKEN ? { 'X-ELS-Insttoken': process.env.ELSEVIER_INSTTOKEN } : {}),
           }
-        }),
-        { context: 'Scopus search' }
-      );
+        }, (res) => {
+          let data = '';
+          res.on('data', (chunk: string) => data += chunk);
+          res.on('end', () => {
+            try { resolve(JSON.parse(data)); }
+            catch(e) { reject(new Error('Scopus JSON parse error: ' + data.substring(0, 200))); }
+          });
+        });
+        req.on('error', reject);
+        req.setTimeout(30000, () => { req.destroy(); reject(new Error('Scopus timeout')); });
+        req.end();
+      });
 
       this.quotaManager.incrementUsage('scopus');
 
-      const entries = response.data['search-results']?.entry || [];
+      const entries = scopusData['search-results']?.entry || [];
 
       for (const entry of entries) {
         const paper = await this.parseEntry(entry);
@@ -284,7 +316,7 @@ export class ScopusSearcher extends PaperSource {
         paperId: entry.eid || entry['dc:identifier'] || '',
         title: entry['dc:title'] || '',
         authors: authors ? authors.split(', ') : [],
-        abstract: '', // Abstract not included in search results, need separate API call
+        abstract: entry['dc:description'] || '',
         doi: entry['prism:doi'],
         publishedDate: entry['prism:coverDate'] ? new Date(entry['prism:coverDate']) : null,
         url: paperUrl,
@@ -399,7 +431,7 @@ export class ScopusSearcher extends PaperSource {
   }
 
   /**
-   * 获取参考文献的Scopus ID列表
+   * čŽ·ĺŹ–ĺŹ‚č€ć–‡çŚ®çš„Scopus IDĺ—čˇ¨
    */
   async getReferenceIds(scopusId: string): Promise<string[]> {
     if (!this.elsevierApiKey) return [];
@@ -443,7 +475,7 @@ export class ScopusSearcher extends PaperSource {
   }
 
   /**
-   * 获取引用文献的Scopus ID列表
+   * čŽ·ĺŹ–ĺĽ•ç”¨ć–‡çŚ®çš„Scopus IDĺ—čˇ¨
    */
   async getCitationIds(scopusId: string): Promise<string[]> {
     if (!this.elsevierApiKey) return [];
@@ -485,7 +517,7 @@ export class ScopusSearcher extends PaperSource {
   }
 
   /**
-   * 获取论文详情（包含references和citations ID列表）
+   * čŽ·ĺŹ–č®şć–‡čŻ¦ć…ďĽĺŚ…ĺ«referencesĺ’Ścitations IDĺ—čˇ¨ďĽ‰
    */
   async getPaperWithCitations(paperId: string): Promise<Paper | null> {
     try {
@@ -512,3 +544,6 @@ export class ScopusSearcher extends PaperSource {
     }
   }
 }
+
+
+
