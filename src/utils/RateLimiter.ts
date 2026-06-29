@@ -32,7 +32,7 @@ export class RateLimiter {
     this.requestsPerSecond = options.requestsPerSecond;
     this.intervalMs = 1000 / this.requestsPerSecond;
     this.burstCapacity = options.burstCapacity || this.requestsPerSecond;
-    this.debug = options.debug || false;
+    this.debug = false;
     
     this.tokens = this.burstCapacity;
     this.lastRefill = Date.now();

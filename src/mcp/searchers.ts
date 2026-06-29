@@ -36,8 +36,9 @@ let searchers: Searchers | null = null;
 
 export function initializeSearchers(): Searchers {
   if (searchers) return searchers;
-
   logDebug('Initializing searchers...');
+
+    logDebug('Initializing searchers...');
 
   const arxivSearcher = new ArxivSearcher();
   const wosSearcher = new WebOfScienceSearcher(process.env.WOS_API_KEY, process.env.WOS_API_VERSION);
@@ -53,10 +54,11 @@ export function initializeSearchers(): Searchers {
     process.env.SPRINGER_API_KEY,
     process.env.SPRINGER_OPENACCESS_API_KEY
   );
-  const wileySearcher = new WileySearcher(process.env.WILEY_TDM_TOKEN);
-  const scopusSearcher = new ScopusSearcher(process.env.ELSEVIER_API_KEY);
-  const crossrefSearcher = new CrossrefSearcher(process.env.CROSSREF_MAILTO);
+     const wileySearcher = new WileySearcher(process.env.WILEY_TDM_TOKEN);
 
+    const scopusSearcher = new ScopusSearcher(process.env.ELSEVIER_API_KEY);  
+
+  const crossrefSearcher = new CrossrefSearcher(process.env.CROSSREF_MAILTO);
   searchers = {
     arxiv: arxivSearcher,
     webofscience: wosSearcher,

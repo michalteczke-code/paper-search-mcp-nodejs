@@ -323,7 +323,7 @@ export class WebOfScienceSearcher extends PaperSource {
       q: formattedQuery,
       db: options.databases?.join(',') || 'WOS',
       limit: Math.min(options.maxResults || 10, 100), // WOS API限制最大100条
-      page: 1
+      page: 1,
     };
 
     // 添加排序参数 - 使用正确的API参数名
@@ -342,30 +342,33 @@ export class WebOfScienceSearcher extends PaperSource {
   private buildWosQuery(query: string, options: WoSSearchOptions): string {
     const queryParts: string[] = [];
 
-    // Validate query complexity first
-    const complexityCheck = validateQueryComplexity(query, {
-      maxLength: 1000,
-      maxBooleanOperators: 10
-    });
-    if (!complexityCheck.valid) {
-      throw new Error(complexityCheck.error);
-    }
-
     // 处理主题搜索 - 支持多个关键词
     if (query && query.trim()) {
       // 检查是否已经包含WOS字段标签
       // Supported field tags: TI, IS, SO, VL, PG, CS, PY, FPY, DOP, AU, AI, UT, DO, DT, PMID, OG, TS, SUR
       const wosFieldTags = ['TS=', 'TI=', 'AU=', 'SO=', 'PY=', 'DO=', 'IS=', 'VL=', 'PG=', 'CS=', 
-                           'DT=', 'PMID=', 'FPY=', 'DOP=', 'AI=', 'UT=', 'OG=', 'SUR='];
+                           'DT=', 'PMID=', 'FPY=', 'DOP=', 'AI=', 'UT=', 'OG=', 'SUR=', 'WC='];
       const hasFieldTag = wosFieldTags.some(tag => query.toUpperCase().includes(tag));
+
+      // Walidacja złożoności — pomijamy dla zapytań z field tagami (WC=, TS= itp.),
+      // bo te mają wiele AND NOT WC= które przekraczają domyślny limit 10 operatorów.
+      // Dla prostych zapytań bez tagów walidujemy z wyższym limitem.
+      if (!hasFieldTag) {
+        const complexityCheck = validateQueryComplexity(query, {
+          maxLength: 2000,
+          maxBooleanOperators: 50,
+        });
+        if (!complexityCheck.valid) {
+          throw new Error(complexityCheck.error);
+        }
+      }
       
       if (hasFieldTag) {
         // 用户提供了带字段标签的查询，直接使用（不进行转义）
         queryParts.push(query);
       } else {
         // 简单查询，使用TS(Topic)字段
-        const escapedQuery = escapeQueryValue(query, 'wos');
-        queryParts.push(`TS=(${escapedQuery})`);
+        queryParts.push(`TS=(${query})`);
       }
     }
 

@@ -3,6 +3,7 @@
  * Paper Search MCP Server - Node.js Implementation
  */
 
+import './env.js';
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import {
@@ -16,7 +17,6 @@ import { TOOLS } from './mcp/tools.js';
 import { initializeSearchers } from './mcp/searchers.js';
 import { handleToolCall } from './mcp/handleToolCall.js';
 import { isMCPMode, logDebug } from './utils/Logger.js';
-
 dotenv.config();
 
 const server = new Server(
