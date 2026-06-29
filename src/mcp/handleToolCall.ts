@@ -117,7 +117,7 @@ export async function handleToolCall(
       } as any);
 
       return jsonTextResponse(
-        `Found ${results.length} Web of Science papers.\n\n${JSON.stringify(
+        `Found ${results.length} of ${(searchers.webofscience as any).lastTotalResults||0} Web of Science papers.\nTotal available: ${(searchers.webofscience as any).lastTotalResults||0}\n\n${JSON.stringify(
           results.map((paper: Paper) => PaperFactory.toDict(paper)),
           null,
           2
@@ -199,7 +199,8 @@ export async function handleToolCall(
       const rateLimit = searchers.semantic.hasApiKey() ? '200 requests/minute' : '20 requests/minute';
 
       return jsonTextResponse(
-        `Found ${results.length} Semantic Scholar papers.\n\nAPI Status: ${apiKeyStatus} (${rateLimit})\nRate Limiter: ${rateStatus.availableTokens}/${rateStatus.maxTokens} tokens available\n\n${JSON.stringify(
+        `Found ${results.length} of ${(searchers.semantic as any).lastTotalResults||0} Semantic Scholar papers.
+Total available: ${(searchers.semantic as any).lastTotalResults||0}\n\nAPI Status: ${apiKeyStatus} (${rateLimit})\nRate Limiter: ${rateStatus.availableTokens}/${rateStatus.maxTokens} tokens available\n\n${JSON.stringify(
           results.map((paper: Paper) => PaperFactory.toDict(paper)),
           null,
           2
@@ -336,7 +337,7 @@ export async function handleToolCall(
       });
 
       return jsonTextResponse(
-        `Found ${results.length} ScienceDirect papers.\n\n${JSON.stringify(
+        `Found ${results.length} of ${(searchers.sciencedirect as any).lastTotalResults||0} ScienceDirect papers.\nTotal available: ${(searchers.sciencedirect as any).lastTotalResults||0}\n\n${JSON.stringify(
           results.map((paper: Paper) => PaperFactory.toDict(paper)),
           null,
           2
@@ -361,7 +362,7 @@ export async function handleToolCall(
       } as any);
 
       return jsonTextResponse(
-        `Found ${results.length} Springer papers.\n\n${JSON.stringify(
+        `Found ${results.length} of ${(searchers.springer as any).lastTotalResults||0} Springer papers.\nTotal available: ${(searchers.springer as any).lastTotalResults||0}\n\n${JSON.stringify(
           results.map((paper: Paper) => PaperFactory.toDict(paper)),
           null,
           2
@@ -380,10 +381,12 @@ export async function handleToolCall(
     }
 
     case 'search_scopus': {
-      const { query, maxResults, year, author, journal, affiliation, subject, openAccess, documentType } = args;
+      const { query, maxResults, year, author, journal, affiliation, subject, openAccess, documentType, start, sort } = args;
       if (!process.env.ELSEVIER_API_KEY) {
         throw new Error('Elsevier API key not configured. Please set ELSEVIER_API_KEY environment variable.');
       }
+
+      logDebug(`[search_scopus] start=${start} maxResults=${maxResults}`);
 
       const results = await searchers.scopus.search(query, {
         maxResults,
@@ -393,11 +396,14 @@ export async function handleToolCall(
         affiliation,
         subject,
         openAccess,
-        documentType
+        documentType,
+        start,
+        sort
       } as any);
 
+      const totalAvailable = (searchers.scopus as any).lastTotalResults || 0;
       return jsonTextResponse(
-        `Found ${results.length} Scopus papers.\n\n${JSON.stringify(
+        `Found ${results.length} of ${totalAvailable} Scopus papers.\nTotal available: ${totalAvailable}\n\n${JSON.stringify(
           results.map((paper: Paper) => PaperFactory.toDict(paper)),
           null,
           2

@@ -166,14 +166,16 @@ constructor(apiKey?: string, searchApiKey?: string) {
     });
   }
 
+public lastTotalResults: number = 0;
+
 async search(query: string, options: SearchOptions = {}): Promise<Paper[]> {
     const customOptions = options as any;
     if (!this.searchApiKey) {
       throw new Error('Scopus API key is required');
     }
-    // Limit 25 per strona (twarde ograniczenie Scopus Starter API).
-    // Paginacja jest obsĹ‚ugiwana po stronie server.js przez parametr start.
-    const countPerPage = 25;
+    // Scopus Starter API: max 25 per strona; jeśli maxResults < 25 pobieramy mniej.
+    // Paginacja obsługiwana po stronie server.js przez parametr start.
+    const countPerPage = Math.min(options.maxResults || 25, 25);
     const startIndex = customOptions.start || 0;
     const papers: Paper[] = [];
 
@@ -247,6 +249,7 @@ async search(query: string, options: SearchOptions = {}): Promise<Paper[]> {
         `view=STANDARD`,
         `field=dc:identifier,dc:title,dc:creator,prism:publicationName,prism:coverDate,prism:doi,citedby-count,author,affiliation,openaccess,eid,dc:description`
       ].join('&');
+      console.log(`[ScopusSearcher] start=${startIndex} count=${countPerPage} url=/content/search/scopus?${qs.substring(0,120)}...`);
 
       const scopusData: ScopusSearchResponse = await new Promise((resolve, reject) => {
         const req = https.default.request({
@@ -274,6 +277,7 @@ async search(query: string, options: SearchOptions = {}): Promise<Paper[]> {
 
       this.quotaManager.incrementUsage('scopus');
 
+      this.lastTotalResults = parseInt(scopusData['search-results']?.['opensearch:totalResults'] || '0', 10);
       const entries = scopusData['search-results']?.entry || [];
 
       for (const entry of entries) {

@@ -115,6 +115,8 @@ constructor(apiKey?: string) {
     });
   }
 
+  public lastTotalResults: number = 0;
+
   async search(query: string, options: SearchOptions = {}): Promise<Paper[]> {
     const customOptions = options as any;
     if (!this.apiKey) {
@@ -164,6 +166,7 @@ constructor(apiKey?: string) {
 
       this.quotaManager.incrementUsage('sciencedirect');
 
+      this.lastTotalResults = parseInt(response.data?.['search-results']?.['opensearch:totalResults'] || response.data?.resultsFound || '0', 10);
       const results = response.data?.results || [];
 
       for (const result of results) {

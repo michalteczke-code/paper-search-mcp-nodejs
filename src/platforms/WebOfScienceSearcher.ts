@@ -467,7 +467,10 @@ export class WebOfScienceSearcher extends PaperSource {
   /**
    * 解析搜索响应
    */
+  public lastTotalResults: number = 0;
+
   private parseSearchResponse(data: WoSApiResponse): Paper[] {
+    this.lastTotalResults = data.metadata?.total || 0;
     if (!data.hits || !Array.isArray(data.hits)) {
       logDebug('WoS: No hits found in response or hits is not an array');
       return [];

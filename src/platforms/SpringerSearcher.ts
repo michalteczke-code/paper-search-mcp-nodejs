@@ -111,6 +111,8 @@ export class SpringerSearcher extends PaperSource {
     });
   }
 
+  public lastTotalResults: number = 0;
+
   async search(query: string, options: SearchOptions = {}): Promise<Paper[]> {
     const customOptions = options as any;
     if (!this.apiKey) {
@@ -193,6 +195,10 @@ export class SpringerSearcher extends PaperSource {
       }
 
       this.quotaManager.incrementUsage('springer');
+
+      // Extract totalResults
+      const springerTotal = response.data?.result?.[0]?.total || response.data?.facets?.[0]?.values?.[0]?.count || 0;
+      this.lastTotalResults = typeof springerTotal === 'string' ? parseInt(springerTotal, 10) : (springerTotal || 0);
 
       // Handle different response structures
       // Meta v2 API: records contains the actual papers, result contains metadata

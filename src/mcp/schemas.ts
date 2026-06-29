@@ -185,7 +185,9 @@ export const SearchScopusSchema = z
     affiliation: z.string().optional(),
     subject: z.string().optional(),
     openAccess: z.boolean().optional(),
-    documentType: z.enum(['ar', 'cp', 're', 'bk', 'ch']).optional()
+    documentType: z.enum(['ar', 'cp', 're', 'bk', 'ch']).optional(),
+    start: z.number().int().min(0).optional().default(0),
+    sort: z.string().optional()
   })
   .strip();
 

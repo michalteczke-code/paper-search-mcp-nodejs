@@ -344,7 +344,10 @@ export class SemanticScholarSearcher extends PaperSource {
   /**
    * 解析搜索响应
    */
+  public lastTotalResults: number = 0;
+
   private parseSearchResponse(data: SemanticSearchResponse): Paper[] {
+    this.lastTotalResults = (data as any).total || 0;
     if (!data.data || !Array.isArray(data.data)) {
       return [];
     }
