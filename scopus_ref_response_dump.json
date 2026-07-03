@@ -1,0 +1,2867 @@
+{
+  "abstracts-retrieval-response": {
+    "references": {
+      "reference": [
+        {
+          "scopus-eid": "2-s2.0-0342775775",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "18",
+              "@issue": "7"
+            },
+            "pagerange": {
+              "@first": "509",
+              "@last": "533"
+            }
+          },
+          "prism:coverDate": "1997-01-01",
+          "sourcetitle": "Strategic Management Journal",
+          "type": "resolvedReference",
+          "title": "Dynamic capabilities and strategic management",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0342775775",
+          "citedby-count": "25955",
+          "scopus-id": "0342775775",
+          "@id": "1",
+          "ce:doi": "10.1002/(SICI)1097-0266(199708)18:7<509::AID-SMJ882>3.0.CO;2-Z",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "David J.",
+                "preferred-name": {
+                  "ce:given-name": "David J.",
+                  "ce:initials": "D.J.",
+                  "ce:surname": "Teece",
+                  "ce:indexed-name": "Teece D.J."
+                },
+                "@seq": "1",
+                "ce:initials": "D.J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60072522",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60072522"
+                },
+                "ce:surname": "Teece",
+                "@auid": "6701775408",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6701775408",
+                "@force-array": "true",
+                "ce:indexed-name": "Teece D.J."
+              },
+              {
+                "ce:given-name": "Gary",
+                "preferred-name": {
+                  "ce:given-name": "Gary",
+                  "ce:initials": "G.",
+                  "ce:surname": "Pisano",
+                  "ce:indexed-name": "Pisano G."
+                },
+                "@seq": "2",
+                "ce:initials": "G.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60009982",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60009982"
+                },
+                "ce:surname": "Pisano",
+                "@auid": "7006165945",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7006165945",
+                "@force-array": "true",
+                "ce:indexed-name": "Pisano G."
+              },
+              {
+                "ce:given-name": "Amy",
+                "preferred-name": {
+                  "ce:given-name": "Amy",
+                  "ce:initials": "A.",
+                  "ce:surname": "Shuen",
+                  "ce:indexed-name": "Shuen A."
+                },
+                "@seq": "3",
+                "ce:initials": "A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60015609",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60015609"
+                },
+                "ce:surname": "Shuen",
+                "@auid": "36966457000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/36966457000",
+                "@force-array": "true",
+                "ce:indexed-name": "Shuen A."
+              },
+              {
+                "ce:given-name": "David J.",
+                "preferred-name": {
+                  "ce:given-name": "David J.",
+                  "ce:initials": "D.J.",
+                  "ce:surname": "Teece",
+                  "ce:indexed-name": "Teece D.J."
+                },
+                "@seq": "1",
+                "ce:initials": "D.J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60072522",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60072522"
+                },
+                "ce:surname": "Teece",
+                "@auid": "6701775408",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6701775408",
+                "@force-array": "true",
+                "ce:indexed-name": "Teece D.J."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-84924976901",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "18",
+              "@issue": "1"
+            },
+            "pagerange": {
+              "@first": "18",
+              "@last": "36"
+            }
+          },
+          "prism:coverDate": "2015-01-01",
+          "sourcetitle": "BRQ Business Research Quarterly",
+          "type": "resolvedReference",
+          "title": "Born globals trough knowledge-based dynamic capabilities and network market orientation",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/84924976901",
+          "citedby-count": "85",
+          "scopus-id": "84924976901",
+          "@id": "2",
+          "ce:doi": "10.1016/j.brq.2014.04.001",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Diego",
+                "preferred-name": {
+                  "ce:given-name": "Diego",
+                  "ce:initials": "D.",
+                  "ce:surname": "Monferrer",
+                  "ce:indexed-name": "Monferrer D."
+                },
+                "@seq": "1",
+                "ce:initials": "D.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60002676",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60002676"
+                },
+                "ce:surname": "Monferrer",
+                "@auid": "24921921000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/24921921000",
+                "@force-array": "true",
+                "ce:indexed-name": "Monferrer D."
+              },
+              {
+                "ce:given-name": "Andreu",
+                "preferred-name": {
+                  "ce:given-name": "Andreu",
+                  "ce:initials": "A.",
+                  "ce:surname": "Blesa",
+                  "ce:indexed-name": "Blesa A."
+                },
+                "@seq": "2",
+                "ce:initials": "A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60002676",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60002676"
+                },
+                "ce:surname": "Blesa",
+                "@auid": "24921135300",
+                "author-url": "https://api.elsevier.com/content/author/author_id/24921135300",
+                "@force-array": "true",
+                "ce:indexed-name": "Blesa A."
+              },
+              {
+                "ce:given-name": "María",
+                "preferred-name": {
+                  "ce:given-name": "María",
+                  "ce:initials": "M.",
+                  "ce:surname": "Ripollés",
+                  "ce:indexed-name": "Ripollés M."
+                },
+                "@seq": "3",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60002676",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60002676"
+                },
+                "ce:surname": "Ripollés",
+                "@auid": "24922074400",
+                "author-url": "https://api.elsevier.com/content/author/author_id/24922074400",
+                "@force-array": "true",
+                "ce:indexed-name": "Ripolles M."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-84902346560",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "47",
+              "@issue": "4"
+            },
+            "pagerange": {
+              "@first": "186",
+              "@last": "205"
+            }
+          },
+          "prism:coverDate": "2014-01-01",
+          "sourcetitle": "Long Range Planning",
+          "type": "resolvedReference",
+          "title": "Building dynamic capabilities of adaptation and innovation: A study of micro-foundations in a transition economy",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/84902346560",
+          "citedby-count": "195",
+          "scopus-id": "84902346560",
+          "@id": "3",
+          "ce:doi": "10.1016/j.lrp.2013.08.011",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Sarah",
+                "preferred-name": {
+                  "ce:given-name": "Sarah",
+                  "ce:initials": "S.",
+                  "ce:surname": "Dixon",
+                  "ce:indexed-name": "Dixon S."
+                },
+                "@seq": "1",
+                "ce:initials": "S.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60102426",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60102426"
+                },
+                "ce:surname": "Dixon",
+                "@auid": "16401349200",
+                "author-url": "https://api.elsevier.com/content/author/author_id/16401349200",
+                "@force-array": "true",
+                "ce:indexed-name": "Dixon S."
+              },
+              {
+                "ce:given-name": "Klaus",
+                "preferred-name": {
+                  "ce:given-name": "Klaus",
+                  "ce:initials": "K.",
+                  "ce:surname": "Meyer",
+                  "ce:indexed-name": "Meyer K."
+                },
+                "@seq": "2",
+                "ce:initials": "K.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60028843",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60028843"
+                },
+                "ce:surname": "Meyer",
+                "@auid": "7401793822",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7401793822",
+                "@force-array": "true",
+                "ce:indexed-name": "Meyer K."
+              },
+              {
+                "ce:given-name": "Marc",
+                "preferred-name": {
+                  "ce:given-name": "Marc",
+                  "ce:initials": "M.",
+                  "ce:surname": "Day",
+                  "ce:indexed-name": "Day M."
+                },
+                "@seq": "3",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60105822",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60105822"
+                },
+                "ce:surname": "Day",
+                "@auid": "58302740600",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58302740600",
+                "@force-array": "true",
+                "ce:indexed-name": "Day M."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-85084715087",
+          "scopus-id": "85084715087",
+          "@_fa": "true",
+          "volisspag": null,
+          "derivedSequence": "4",
+          "sourcetitle": "Technovation",
+          "@id": "4",
+          "type": "originalReference/other",
+          "title": "Dynamic capabilities, creativity and innovation capability and their impact on competitive advantage and firm performance: The moderating role of entrepreneurial orientation",
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "J.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Ferreira",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Ferreira J."
+              },
+              {
+                "@seq": "2",
+                "ce:initials": "A.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Coelho",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Coelho A."
+              },
+              {
+                "@seq": "3",
+                "ce:initials": "L.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Moutinho",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Moutinho L."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85084715087"
+        },
+        {
+          "scopus-eid": "2-s2.0-0001812752",
+          "scopus-id": "0001812752",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "2"
+            }
+          },
+          "derivedSequence": "5",
+          "sourcetitle": "Organ. Sci",
+          "@id": "5",
+          "type": "originalReference/other",
+          "title": "Exploration and exploitation in organizational learning",
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "J.G.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "March",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "March J.G."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0001812752"
+        },
+        {
+          "scopus-eid": "2-s2.0-0000877903",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "21",
+              "@issue": "10-11"
+            },
+            "pagerange": {
+              "@first": "1105",
+              "@last": "1121"
+            }
+          },
+          "prism:coverDate": "2000-01-01",
+          "sourcetitle": "Strategic Management Journal",
+          "type": "resolvedReference",
+          "title": "Dynamic capabilities: What are they?",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0000877903",
+          "citedby-count": "11672",
+          "scopus-id": "0000877903",
+          "@id": "6",
+          "ce:doi": "10.1002/1097-0266(200010/11)21:10/11<1105::AID-SMJ133>3.0.CO;2-E",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Kathleen M.",
+                "preferred-name": {
+                  "ce:given-name": "Kathleen M.",
+                  "ce:initials": "K.M.",
+                  "ce:surname": "Eisenhardt",
+                  "ce:indexed-name": "Eisenhardt K.M."
+                },
+                "@seq": "1",
+                "ce:initials": "K.M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60141508",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60141508"
+                },
+                "ce:surname": "Eisenhardt",
+                "@auid": "6701924601",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6701924601",
+                "@force-array": "true",
+                "ce:indexed-name": "Eisenhardt K.M."
+              },
+              {
+                "ce:given-name": "Jeffrey A.",
+                "preferred-name": {
+                  "ce:given-name": "Jeffrey A.",
+                  "ce:initials": "J.A.",
+                  "ce:surname": "Martin",
+                  "ce:indexed-name": "Martin J.A."
+                },
+                "@seq": "2",
+                "ce:initials": "J.A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60141508",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60141508"
+                },
+                "ce:surname": "Martin",
+                "@auid": "55522815600",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55522815600",
+                "@force-array": "true",
+                "ce:indexed-name": "Martin J.A."
+              },
+              {
+                "ce:given-name": "Kathleen M.",
+                "preferred-name": {
+                  "ce:given-name": "Kathleen M.",
+                  "ce:initials": "K.M.",
+                  "ce:surname": "Eisenhardt",
+                  "ce:indexed-name": "Eisenhardt K.M."
+                },
+                "@seq": "1",
+                "ce:initials": "K.M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60141508",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60141508"
+                },
+                "ce:surname": "Eisenhardt",
+                "@auid": "6701924601",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6701924601",
+                "@force-array": "true",
+                "ce:indexed-name": "Eisenhardt K.M."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0042568813",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "12",
+              "@issue": "3"
+            },
+            "pagerange": {
+              "@first": "577",
+              "@last": "606"
+            }
+          },
+          "prism:coverDate": "2003-01-01",
+          "sourcetitle": "Industrial and Corporate Change",
+          "type": "resolvedReference",
+          "title": "Unbundling dynamic capabilities: An exploratory study of continuous product innovation",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0042568813",
+          "citedby-count": "406",
+          "scopus-id": "0042568813",
+          "@id": "7",
+          "ce:doi": "10.1093/icc/12.3.577",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Gianmario",
+                "preferred-name": {
+                  "ce:given-name": "Gianmario",
+                  "ce:initials": "G.",
+                  "ce:surname": "Verona",
+                  "ce:indexed-name": "Verona G."
+                },
+                "@seq": "1",
+                "ce:initials": "G.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60021796",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60021796"
+                },
+                "ce:surname": "Verona",
+                "@auid": "55941123000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55941123000",
+                "@force-array": "true",
+                "ce:indexed-name": "Verona G."
+              },
+              {
+                "ce:given-name": "Davide",
+                "preferred-name": {
+                  "ce:given-name": "Davide",
+                  "ce:initials": "D.",
+                  "ce:surname": "Ravasi",
+                  "ce:indexed-name": "Ravasi D."
+                },
+                "@seq": "2",
+                "ce:initials": "D.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60021796",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60021796"
+                },
+                "ce:surname": "Ravasi",
+                "@auid": "56006342100",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56006342100",
+                "@force-array": "true",
+                "ce:indexed-name": "Ravasi D."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-33847378946",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "9",
+              "@issue": "1"
+            },
+            "pagerange": {
+              "@first": "31",
+              "@last": "51"
+            }
+          },
+          "prism:coverDate": "2007-03-01",
+          "sourcetitle": "International Journal of Management Reviews",
+          "type": "resolvedReference",
+          "title": "Dynamic capabilities: A review and research agenda",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/33847378946",
+          "citedby-count": "1994",
+          "scopus-id": "33847378946",
+          "@id": "8",
+          "ce:doi": "10.1111/j.1468-2370.2007.00201.x",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Catherine L.",
+                "preferred-name": {
+                  "ce:given-name": "Catherine L.",
+                  "ce:initials": "C.L.",
+                  "ce:surname": "Wang",
+                  "ce:indexed-name": "Wang C.L."
+                },
+                "@seq": "1",
+                "ce:initials": "C.L.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60165293",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60165293"
+                },
+                "ce:surname": "Wang",
+                "@auid": "24400470900",
+                "author-url": "https://api.elsevier.com/content/author/author_id/24400470900",
+                "@force-array": "true",
+                "ce:indexed-name": "Wang C.L."
+              },
+              {
+                "ce:given-name": "Pervaiz K.",
+                "preferred-name": {
+                  "ce:given-name": "Pervaiz K.",
+                  "ce:initials": "P.K.",
+                  "ce:surname": "Ahmed",
+                  "ce:indexed-name": "Ahmed P.K."
+                },
+                "@seq": "2",
+                "ce:initials": "P.K.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60018894",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60018894"
+                },
+                "ce:surname": "Ahmed",
+                "@auid": "56275122800",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56275122800",
+                "@force-array": "true",
+                "ce:indexed-name": "Ahmed P.K."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0036014175",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "13",
+              "@issue": "3"
+            },
+            "pagerange": {
+              "@first": "339",
+              "@last": "351"
+            }
+          },
+          "prism:coverDate": "2002-01-01",
+          "sourcetitle": "Organization Science",
+          "type": "resolvedReference",
+          "title": "Deliberate learning and the evolution of dynamic capabilities",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0036014175",
+          "citedby-count": "4926",
+          "scopus-id": "0036014175",
+          "@id": "9",
+          "ce:doi": "10.1287/orsc.13.3.339.2780",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Maurizio",
+                "preferred-name": {
+                  "ce:given-name": "Maurizio",
+                  "ce:initials": "M.",
+                  "ce:surname": "Zollo",
+                  "ce:indexed-name": "Zollo M."
+                },
+                "@seq": "1",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60004888",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60004888"
+                },
+                "ce:surname": "Zollo",
+                "@auid": "56233118300",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56233118300",
+                "@force-array": "true",
+                "ce:indexed-name": "Zollo M."
+              },
+              {
+                "ce:given-name": "Sidney G.",
+                "preferred-name": {
+                  "ce:given-name": "Sidney G.",
+                  "ce:initials": "S.G.",
+                  "ce:surname": "Winter",
+                  "ce:indexed-name": "Winter S.G."
+                },
+                "@seq": "2",
+                "ce:initials": "S.G.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60004888",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60004888"
+                },
+                "ce:surname": "Winter",
+                "@auid": "7202247306",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7202247306",
+                "@force-array": "true",
+                "ce:indexed-name": "Winter S.G."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-84880372141",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "40"
+            },
+            "pagerange": {
+              "@first": "224",
+              "@last": "232"
+            }
+          },
+          "prism:coverDate": "2014-01-01",
+          "sourcetitle": "Tourism Management",
+          "type": "resolvedReference",
+          "title": "Building dynamic capabilities through knowledge resources",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/84880372141",
+          "citedby-count": "222",
+          "scopus-id": "84880372141",
+          "@id": "10",
+          "ce:doi": "10.1016/j.tourman.2013.06.010",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Julia",
+                "preferred-name": {
+                  "ce:given-name": "Julia",
+                  "ce:initials": "J.",
+                  "ce:surname": "Nieves",
+                  "ce:indexed-name": "Nieves J."
+                },
+                "@seq": "1",
+                "ce:initials": "J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60009669",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60009669"
+                },
+                "ce:surname": "Nieves",
+                "@auid": "55601292400",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55601292400",
+                "@force-array": "true",
+                "ce:indexed-name": "Nieves J."
+              },
+              {
+                "ce:given-name": "Sabine",
+                "preferred-name": {
+                  "ce:given-name": "Sabine",
+                  "ce:initials": "S.",
+                  "ce:surname": "Haller",
+                  "ce:indexed-name": "Haller S."
+                },
+                "@seq": "2",
+                "ce:initials": "S.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60029732",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60029732"
+                },
+                "ce:surname": "Haller",
+                "@auid": "55796896100",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55796896100",
+                "@force-array": "true",
+                "ce:indexed-name": "Haller S."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-33646380598",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "43",
+              "@issue": "4"
+            },
+            "pagerange": {
+              "@first": "447",
+              "@last": "454"
+            }
+          },
+          "prism:coverDate": "2006-06-01",
+          "sourcetitle": "Information and Management",
+          "type": "resolvedReference",
+          "title": "Resources, dynamic capabilities and performance in a dynamic environment: Perceptions in Taiwanese IT enterprises",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/33646380598",
+          "citedby-count": "115",
+          "scopus-id": "33646380598",
+          "@id": "11",
+          "ce:doi": "10.1016/j.im.2005.11.001",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Lei-Yu",
+                "preferred-name": {
+                  "ce:given-name": "Lei Yu",
+                  "ce:initials": "L.Y.",
+                  "ce:surname": "Wu",
+                  "ce:indexed-name": "Wu L.Y."
+                },
+                "@seq": "1",
+                "ce:initials": "L.-Y.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60092858",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60092858"
+                },
+                "ce:surname": "Wu",
+                "@auid": "8930046200",
+                "author-url": "https://api.elsevier.com/content/author/author_id/8930046200",
+                "@force-array": "true",
+                "ce:indexed-name": "Wu L.-Y."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-85039727130",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "47",
+              "@issue": "2"
+            },
+            "pagerange": {
+              "@first": "413",
+              "@last": "427"
+            }
+          },
+          "prism:coverDate": "2018-03-01",
+          "sourcetitle": "Research Policy",
+          "type": "resolvedReference",
+          "title": "Disentangling the antecedents of ambidexterity: Exploration and exploitation",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85039727130",
+          "citedby-count": "299",
+          "scopus-id": "85039727130",
+          "@id": "12",
+          "ce:doi": "10.1016/j.respol.2017.12.003",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Oksana",
+                "preferred-name": {
+                  "ce:given-name": "Oksana",
+                  "ce:initials": "O.",
+                  "ce:surname": "Koryak",
+                  "ce:indexed-name": "Koryak O."
+                },
+                "@seq": "1",
+                "ce:initials": "O.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60116362",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60116362"
+                },
+                "ce:surname": "Koryak",
+                "@auid": "24338393100",
+                "author-url": "https://api.elsevier.com/content/author/author_id/24338393100",
+                "@force-array": "true",
+                "ce:indexed-name": "Koryak O."
+              },
+              {
+                "ce:given-name": "Andy",
+                "preferred-name": {
+                  "ce:given-name": "Andy",
+                  "ce:initials": "A.",
+                  "ce:surname": "Lockett",
+                  "ce:indexed-name": "Lockett A."
+                },
+                "@seq": "2",
+                "ce:initials": "A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60115484",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60115484"
+                },
+                "ce:surname": "Lockett",
+                "@auid": "7004487875",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7004487875",
+                "@force-array": "true",
+                "ce:indexed-name": "Lockett A."
+              },
+              {
+                "ce:given-name": "James",
+                "preferred-name": {
+                  "ce:given-name": "James",
+                  "ce:initials": "J.",
+                  "ce:surname": "Hayton",
+                  "ce:indexed-name": "Hayton J."
+                },
+                "@seq": "3",
+                "ce:initials": "J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60115484",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60115484"
+                },
+                "ce:surname": "Hayton",
+                "@auid": "6602558122",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6602558122",
+                "@force-array": "true",
+                "ce:indexed-name": "Hayton J."
+              },
+              {
+                "ce:given-name": "Nicos",
+                "preferred-name": {
+                  "ce:given-name": "Nicos",
+                  "ce:initials": "N.",
+                  "ce:surname": "Nicolaou",
+                  "ce:indexed-name": "Nicolaou N."
+                },
+                "@seq": "4",
+                "ce:initials": "N.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60115484",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60115484"
+                },
+                "ce:surname": "Nicolaou",
+                "@auid": "23486488500",
+                "author-url": "https://api.elsevier.com/content/author/author_id/23486488500",
+                "@force-array": "true",
+                "ce:indexed-name": "Nicolaou N."
+              },
+              {
+                "ce:given-name": "Kevin",
+                "preferred-name": {
+                  "ce:given-name": "Kevin",
+                  "ce:initials": "K.",
+                  "ce:surname": "Mole",
+                  "ce:indexed-name": "Mole K."
+                },
+                "@seq": "5",
+                "ce:initials": "K.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60115484",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60115484"
+                },
+                "ce:surname": "Mole",
+                "@auid": "6602100968",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6602100968",
+                "@force-array": "true",
+                "ce:indexed-name": "Mole K."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0000194533",
+          "scopus-id": "0000194533",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "9"
+            }
+          },
+          "derivedSequence": "13",
+          "sourcetitle": "Acad. Manag. Rev",
+          "@id": "13",
+          "type": "originalReference/other",
+          "title": "Upper Echelons: The Organization as a Reflection of Its Top Managers",
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "D.C.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Hambrick",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Hambrick D.C."
+              },
+              {
+                "@seq": "2",
+                "ce:initials": "P.A.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Mason",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Mason P.A."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0000194533"
+        },
+        {
+          "scopus-eid": "2-s2.0-0001559307",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "21",
+              "@issue": "9"
+            },
+            "pagerange": {
+              "@first": "911",
+              "@last": "923"
+            }
+          },
+          "prism:coverDate": "2000-01-01",
+          "sourcetitle": "Strategic Management Journal",
+          "type": "resolvedReference",
+          "title": "Management heterogeneity, competitive interaction groups, and firm performance",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0001559307",
+          "citedby-count": "124",
+          "scopus-id": "0001559307",
+          "@id": "14",
+          "ce:doi": "10.1002/1097-0266(200009)21:9<911::AID-SMJ124>3.0.CO;2-9",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "C. Carl",
+                "preferred-name": {
+                  "ce:given-name": "C. Carl",
+                  "ce:initials": "C.C.",
+                  "ce:surname": "Pegels",
+                  "ce:indexed-name": "Pegels C.C."
+                },
+                "@seq": "1",
+                "ce:initials": "C.C.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60032083",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60032083"
+                },
+                "ce:surname": "Pegels",
+                "@auid": "6701679145",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6701679145",
+                "@force-array": "true",
+                "ce:indexed-name": "Pegels C.C."
+              },
+              {
+                "ce:given-name": "Yong I.",
+                "preferred-name": {
+                  "ce:given-name": "Yong I.",
+                  "ce:initials": "Y.I.",
+                  "ce:surname": "Song",
+                  "ce:indexed-name": "Song Y.I."
+                },
+                "@seq": "2",
+                "ce:initials": "Y.I.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60032083",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60032083"
+                },
+                "ce:surname": "Song",
+                "@auid": "7404920590",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7404920590",
+                "@force-array": "true",
+                "ce:indexed-name": "Song Y.I."
+              },
+              {
+                "ce:given-name": "Baik",
+                "preferred-name": {
+                  "ce:given-name": "Baik",
+                  "ce:initials": "B.",
+                  "ce:surname": "Yang",
+                  "ce:indexed-name": "Yang B."
+                },
+                "@seq": "3",
+                "ce:initials": "B.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "117307584",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/117307584"
+                },
+                "ce:surname": "Yang",
+                "@auid": "7404472487",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7404472487",
+                "@force-array": "true",
+                "ce:indexed-name": "Yang B."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-77955243892",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "12",
+              "@issue": "3"
+            },
+            "pagerange": {
+              "@first": "301",
+              "@last": "316"
+            }
+          },
+          "prism:coverDate": "2010-09-01",
+          "sourcetitle": "International Journal of Management Reviews",
+          "type": "resolvedReference",
+          "title": "Top management team diversity: A review of theories and methodologies",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/77955243892",
+          "citedby-count": "364",
+          "scopus-id": "77955243892",
+          "@id": "15",
+          "ce:doi": "10.1111/j.1468-2370.2009.00263.x",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Sabina",
+                "preferred-name": {
+                  "ce:given-name": "Sabina",
+                  "ce:initials": "S.",
+                  "ce:surname": "Nielsen",
+                  "ce:indexed-name": "Nielsen S."
+                },
+                "@seq": "1",
+                "ce:initials": "S.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60020188",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60020188"
+                },
+                "ce:surname": "Nielsen",
+                "@auid": "25932127800",
+                "author-url": "https://api.elsevier.com/content/author/author_id/25932127800",
+                "@force-array": "true",
+                "ce:indexed-name": "Nielsen S."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-85061302550",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "11",
+              "@issue": "3"
+            }
+          },
+          "prism:coverDate": "2019-02-09",
+          "sourcetitle": "Sustainability (Switzerland)",
+          "type": "resolvedReference",
+          "title": "Ambidextrous leadership, social entrepreneurial orientation, and operational performance",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85061302550",
+          "citedby-count": "42",
+          "scopus-id": "85061302550",
+          "@id": "16",
+          "article-number": "890",
+          "ce:doi": "10.3390/su11030890",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Carla",
+                "preferred-name": {
+                  "ce:given-name": "Carla",
+                  "ce:initials": "C.",
+                  "ce:surname": "Martínez-Climent",
+                  "ce:indexed-name": "Martínez-Climent C."
+                },
+                "@seq": "1",
+                "ce:initials": "C.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60011476",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60011476"
+                },
+                "ce:surname": "Martínez-Climent",
+                "@auid": "57201675448",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57201675448",
+                "@force-array": "true",
+                "ce:indexed-name": "Martinez-Climent C."
+              },
+              {
+                "ce:given-name": "María",
+                "preferred-name": {
+                  "ce:given-name": "María",
+                  "ce:initials": "M.",
+                  "ce:surname": "Rodríguez-García",
+                  "ce:indexed-name": "Rodríguez-García M."
+                },
+                "@seq": "2",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60110200",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60110200"
+                },
+                "ce:surname": "Rodríguez-García",
+                "@auid": "57205729175",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57205729175",
+                "@force-array": "true",
+                "ce:indexed-name": "Rodriguez-Garcia M."
+              },
+              {
+                "ce:given-name": "Juying",
+                "preferred-name": {
+                  "ce:given-name": "Juying",
+                  "ce:initials": "J.",
+                  "ce:surname": "Zeng",
+                  "ce:indexed-name": "Zeng J."
+                },
+                "@seq": "3",
+                "ce:initials": "J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60098512",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60098512"
+                },
+                "ce:surname": "Zeng",
+                "@auid": "23494477700",
+                "author-url": "https://api.elsevier.com/content/author/author_id/23494477700",
+                "@force-array": "true",
+                "ce:indexed-name": "Zeng J."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-85066939474",
+          "scopus-id": "85066939474",
+          "@_fa": "true",
+          "volisspag": null,
+          "derivedSequence": "17",
+          "sourcetitle": "In Courtly Letters in the Age of Henry VIII",
+          "@id": "17",
+          "type": "originalReference/other",
+          "title": "The influence of founding team company affiliations on firm behavior",
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "C.M.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Beckman",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Beckman C.M."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85066939474"
+        },
+        {
+          "scopus-eid": "2-s2.0-70350018075",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "20",
+              "@issue": "4"
+            },
+            "pagerange": {
+              "@first": "781",
+              "@last": "796"
+            }
+          },
+          "prism:coverDate": "2009-01-01",
+          "sourcetitle": "Organization Science",
+          "type": "resolvedReference",
+          "title": "Unpacking organizational ambidexterity: Dimensions, contingencies, and synergistic effects",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/70350018075",
+          "citedby-count": "1218",
+          "scopus-id": "70350018075",
+          "@id": "18",
+          "ce:doi": "10.1287/orsc.1090.0426",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Qing",
+                "preferred-name": {
+                  "ce:given-name": "Qing",
+                  "ce:initials": "Q.",
+                  "ce:surname": "Cao",
+                  "ce:indexed-name": "Cao Q."
+                },
+                "@seq": "1",
+                "ce:initials": "Q.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60123805",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60123805"
+                },
+                "ce:surname": "Cao",
+                "@auid": "57202102734",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57202102734",
+                "@force-array": "true",
+                "ce:indexed-name": "Cao Q."
+              },
+              {
+                "ce:given-name": "Eric",
+                "preferred-name": {
+                  "ce:given-name": "Eric",
+                  "ce:initials": "E.",
+                  "ce:surname": "Gedajlovic",
+                  "ce:indexed-name": "Gedajlovic E."
+                },
+                "@seq": "2",
+                "ce:initials": "E.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60018491",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60018491"
+                },
+                "ce:surname": "Gedajlovic",
+                "@auid": "6602398805",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6602398805",
+                "@force-array": "true",
+                "ce:indexed-name": "Gedajlovic E."
+              },
+              {
+                "ce:given-name": "Hongping",
+                "preferred-name": {
+                  "ce:given-name": "Hongping",
+                  "ce:initials": "H.",
+                  "ce:surname": "Zhang",
+                  "ce:indexed-name": "Zhang H."
+                },
+                "@seq": "3",
+                "ce:initials": "H.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60031031",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60031031"
+                },
+                "ce:surname": "Zhang",
+                "@auid": "35095809000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/35095809000",
+                "@force-array": "true",
+                "ce:indexed-name": "Zhang H."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0038717267",
+          "scopus-id": "0038717267",
+          "@_fa": "true",
+          "volisspag": null,
+          "derivedSequence": "19",
+          "sourcetitle": "Handbook of Strategic Management",
+          "@id": "19",
+          "type": "originalReference/other",
+          "title": "A strategic management model of agency relationships in firm governance",
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "M.H.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Lubatkin",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Lubatkin M.H."
+              },
+              {
+                "@seq": "2",
+                "ce:initials": "P.J.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Lane",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Lane P.J."
+              },
+              {
+                "@seq": "3",
+                "ce:initials": "W.S.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Schulze",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Schulze W.S."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0038717267"
+        },
+        {
+          "scopus-eid": "2-s2.0-85028426618",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "51",
+              "@issue": "6"
+            },
+            "pagerange": {
+              "@first": "797",
+              "@last": "814"
+            }
+          },
+          "prism:coverDate": "2018-12-01",
+          "sourcetitle": "Long Range Planning",
+          "type": "resolvedReference",
+          "title": "On micro-foundations of dynamic capabilities: A multi-level perspective based on CEO personality and knowledge-based capital",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85028426618",
+          "citedby-count": "108",
+          "scopus-id": "85028426618",
+          "@id": "20",
+          "ce:doi": "10.1016/j.lrp.2017.08.002",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "David",
+                "preferred-name": {
+                  "ce:given-name": "David",
+                  "ce:initials": "D.",
+                  "ce:surname": "Bendig",
+                  "ce:indexed-name": "Bendig D."
+                },
+                "@seq": "1",
+                "ce:initials": "D.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60016653",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60016653"
+                },
+                "ce:surname": "Bendig",
+                "@auid": "56278690300",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56278690300",
+                "@force-array": "true",
+                "ce:indexed-name": "Bendig D."
+              },
+              {
+                "ce:given-name": "Steffen",
+                "preferred-name": {
+                  "ce:given-name": "Steffen",
+                  "ce:initials": "S.",
+                  "ce:surname": "Strese",
+                  "ce:indexed-name": "Strese S."
+                },
+                "@seq": "2",
+                "ce:initials": "S.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60016653",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60016653"
+                },
+                "ce:surname": "Strese",
+                "@auid": "54581643400",
+                "author-url": "https://api.elsevier.com/content/author/author_id/54581643400",
+                "@force-array": "true",
+                "ce:indexed-name": "Strese S."
+              },
+              {
+                "ce:given-name": "Maika Eva Susanne",
+                "preferred-name": {
+                  "ce:given-name": "Maika Eva Susanne",
+                  "ce:initials": "M.E.S.",
+                  "ce:surname": "da Costa",
+                  "ce:indexed-name": "da Costa M."
+                },
+                "@seq": "4",
+                "ce:initials": "M.E.S.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60016653",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60016653"
+                },
+                "ce:surname": "da Costa",
+                "@auid": "56703628400",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56703628400",
+                "@force-array": "true",
+                "ce:indexed-name": "da Costa M.E.S."
+              },
+              {
+                "ce:given-name": "Malte",
+                "preferred-name": {
+                  "ce:given-name": "Malte",
+                  "ce:initials": "M.",
+                  "ce:surname": "Brettel",
+                  "ce:indexed-name": "Brettel M."
+                },
+                "@seq": "5",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60016653",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60016653"
+                },
+                "ce:surname": "Brettel",
+                "@auid": "24402546200",
+                "author-url": "https://api.elsevier.com/content/author/author_id/24402546200",
+                "@force-array": "true",
+                "ce:indexed-name": "Brettel M."
+              },
+              {
+                "ce:given-name": "Tessa C.",
+                "preferred-name": {
+                  "ce:given-name": "Tessa C.",
+                  "ce:initials": "T.C.",
+                  "ce:surname": "Flatten",
+                  "ce:indexed-name": "Flatten T."
+                },
+                "@seq": "3",
+                "ce:initials": "T.C.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60032991",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60032991"
+                },
+                "ce:surname": "Flatten",
+                "@auid": "36760725700",
+                "author-url": "https://api.elsevier.com/content/author/author_id/36760725700",
+                "@force-array": "true",
+                "ce:indexed-name": "Flatten T.C."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0141792308",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "24",
+              "@issue": "10 SPEC ISS."
+            },
+            "pagerange": {
+              "@first": "1011",
+              "@last": "1025"
+            }
+          },
+          "prism:coverDate": "2003-10-01",
+          "sourcetitle": "Strategic Management Journal",
+          "type": "resolvedReference",
+          "title": "Corporate effects and dynamic managerial capabilities",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0141792308",
+          "citedby-count": "1255",
+          "scopus-id": "0141792308",
+          "@id": "21",
+          "ce:doi": "10.1002/smj.331",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Ron",
+                "preferred-name": {
+                  "ce:given-name": "Ron",
+                  "ce:initials": "R.",
+                  "ce:surname": "Adner",
+                  "ce:indexed-name": "Adner R."
+                },
+                "@seq": "1",
+                "ce:initials": "R.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60004888",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60004888"
+                },
+                "ce:surname": "Adner",
+                "@auid": "55904381100",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55904381100",
+                "@force-array": "true",
+                "ce:indexed-name": "Adner R."
+              },
+              {
+                "ce:given-name": "Constance E.",
+                "preferred-name": {
+                  "ce:given-name": "Constance E.",
+                  "ce:initials": "C.E.",
+                  "ce:surname": "Helfat",
+                  "ce:indexed-name": "Helfat C.E."
+                },
+                "@seq": "2",
+                "ce:initials": "C.E.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60017072",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60017072"
+                },
+                "ce:surname": "Helfat",
+                "@auid": "6701800744",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6701800744",
+                "@force-array": "true",
+                "ce:indexed-name": "Helfat C.E."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-84930332335",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "41",
+              "@issue": "5"
+            },
+            "pagerange": {
+              "@first": "1281",
+              "@last": "1312"
+            }
+          },
+          "prism:coverDate": "2015-07-04",
+          "sourcetitle": "Journal of Management",
+          "type": "resolvedReference",
+          "title": "Dynamic Managerial Capabilities: Review and Assessment of Managerial Impact on Strategic Change",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/84930332335",
+          "citedby-count": "900",
+          "scopus-id": "84930332335",
+          "@id": "22",
+          "ce:doi": "10.1177/0149206314561301",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Constance E.",
+                "preferred-name": {
+                  "ce:given-name": "Constance E.",
+                  "ce:initials": "C.E.",
+                  "ce:surname": "Helfat",
+                  "ce:indexed-name": "Helfat C.E."
+                },
+                "@seq": "1",
+                "ce:initials": "C.E.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60010756",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60010756"
+                },
+                "ce:surname": "Helfat",
+                "@auid": "6701800744",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6701800744",
+                "@force-array": "true",
+                "ce:indexed-name": "Helfat C.E."
+              },
+              {
+                "ce:given-name": "Jeffrey A.",
+                "preferred-name": {
+                  "ce:given-name": "Jeffrey A.",
+                  "ce:initials": "J.A.",
+                  "ce:surname": "Martin",
+                  "ce:indexed-name": "Martin J.A."
+                },
+                "@seq": "2",
+                "ce:initials": "J.A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60025371",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60025371"
+                },
+                "ce:surname": "Martin",
+                "@auid": "55522815600",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55522815600",
+                "@force-array": "true",
+                "ce:indexed-name": "Martin J.A."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-11144289038",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "30",
+              "@issue": "6"
+            },
+            "pagerange": {
+              "@first": "749",
+              "@last": "778"
+            }
+          },
+          "prism:coverDate": "2004-01-01",
+          "sourcetitle": "Journal of Management",
+          "type": "resolvedReference",
+          "title": "Upper echelons research revisited: Antecedents, elements, and consequences of top management team composition",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/11144289038",
+          "citedby-count": "1768",
+          "scopus-id": "11144289038",
+          "@id": "23",
+          "ce:doi": "10.1016/j.jm.2004.06.001",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Mason A.",
+                "preferred-name": {
+                  "ce:given-name": "Mason A.",
+                  "ce:initials": "M.A.",
+                  "ce:surname": "Carpenter",
+                  "ce:indexed-name": "Carpenter M.A."
+                },
+                "@seq": "1",
+                "ce:initials": "M.A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60032179",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60032179"
+                },
+                "ce:surname": "Carpenter",
+                "@auid": "7201447610",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7201447610",
+                "@force-array": "true",
+                "ce:indexed-name": "Carpenter M.A."
+              },
+              {
+                "ce:given-name": "Marta A.",
+                "preferred-name": {
+                  "ce:given-name": "Marta A.",
+                  "ce:initials": "M.A.",
+                  "ce:surname": "Geletkancz",
+                  "ce:indexed-name": "Geletkancz M.A."
+                },
+                "@seq": "2",
+                "ce:initials": "M.A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60138810",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60138810"
+                },
+                "ce:surname": "Geletkancz",
+                "@auid": "6505986694",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6505986694",
+                "@force-array": "true",
+                "ce:indexed-name": "Geletkancz M.A."
+              },
+              {
+                "ce:given-name": "Wm. Gerard",
+                "preferred-name": {
+                  "ce:given-name": "Wm Gerard",
+                  "ce:initials": "W.G.",
+                  "ce:surname": "Sanders",
+                  "ce:indexed-name": "Sanders W.G."
+                },
+                "@seq": "3",
+                "ce:initials": "Wm.G.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60116518",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60116518"
+                },
+                "ce:surname": "Sanders",
+                "@auid": "55665667200",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55665667200",
+                "@force-array": "true",
+                "ce:indexed-name": "Sanders Wm.G."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0004078737",
+          "scopus-id": "0004078737",
+          "@_fa": "true",
+          "volisspag": null,
+          "derivedSequence": "24",
+          "sourcetitle": "Foundations of Social Theory",
+          "@id": "24",
+          "type": "originalReference/other",
+          "title": null,
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "J.S.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Coleman",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Coleman J.S."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0004078737"
+        },
+        {
+          "scopus-eid": "2-s2.0-84885847936",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "67",
+              "@issue": "1"
+            },
+            "pagerange": {
+              "@first": "2793",
+              "@last": "2799"
+            }
+          },
+          "prism:coverDate": "2014-01-01",
+          "sourcetitle": "Journal of Business Research",
+          "type": "resolvedReference",
+          "title": "Dynamic capabilities, environmental dynamism, and competitive advantage: Evidence from China",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/84885847936",
+          "citedby-count": "607",
+          "scopus-id": "84885847936",
+          "@id": "25",
+          "ce:doi": "10.1016/j.jbusres.2012.08.007",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Da-yuan",
+                "preferred-name": {
+                  "ce:given-name": "Da yuan",
+                  "ce:initials": "D.y.",
+                  "ce:surname": "Li",
+                  "ce:indexed-name": "Li D.y."
+                },
+                "@seq": "1",
+                "ce:initials": "D.-Y.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60129893",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60129893"
+                },
+                "ce:surname": "Li",
+                "@auid": "47861064000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/47861064000",
+                "@force-array": "true",
+                "ce:indexed-name": "Li D.-Y."
+              },
+              {
+                "ce:given-name": "Juan",
+                "preferred-name": {
+                  "ce:given-name": "Juan",
+                  "ce:initials": "J.",
+                  "ce:surname": "Liu",
+                  "ce:indexed-name": "Liu J."
+                },
+                "@seq": "2",
+                "ce:initials": "J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60018038",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60018038"
+                },
+                "ce:surname": "Liu",
+                "@auid": "55341348400",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55341348400",
+                "@force-array": "true",
+                "ce:indexed-name": "Liu J."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-34447541699",
+          "scopus-id": "34447541699",
+          "@_fa": "true",
+          "volisspag": null,
+          "derivedSequence": "26",
+          "sourcetitle": "Dynamic Capabilities: Understanding Strategic Change in Organizations",
+          "@id": "26",
+          "type": "originalReference/other",
+          "title": null,
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "C.E.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Helfat",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Helfat C.E."
+              },
+              {
+                "@seq": "2",
+                "ce:initials": "S.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Finkelstein",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Finkelstein S."
+              },
+              {
+                "@seq": "3",
+                "ce:initials": "W.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Mitchell",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Mitchell W."
+              },
+              {
+                "@seq": "4",
+                "ce:initials": "M.A.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Peteraf",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Peteraf M.A."
+              },
+              {
+                "@seq": "5",
+                "ce:initials": "H.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Singh",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Singh H."
+              },
+              {
+                "@seq": "6",
+                "ce:initials": "D.J.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Teece",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Teece D.J."
+              },
+              {
+                "@seq": "7",
+                "ce:initials": "S.G.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Winter",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Winter S.G."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/34447541699"
+        },
+        {
+          "scopus-eid": "2-s2.0-33744827454",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "43",
+              "@issue": "4"
+            },
+            "pagerange": {
+              "@first": "917",
+              "@last": "955"
+            }
+          },
+          "prism:coverDate": "2006-06-01",
+          "sourcetitle": "Journal of Management Studies",
+          "type": "resolvedReference",
+          "title": "Entrepreneurship and dynamic capabilities: A review, model and research agenda",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/33744827454",
+          "citedby-count": "2290",
+          "scopus-id": "33744827454",
+          "@id": "27",
+          "ce:doi": "10.1111/j.1467-6486.2006.00616.x",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Shaker A.",
+                "preferred-name": {
+                  "ce:given-name": "Shaker A.",
+                  "ce:initials": "S.A.",
+                  "ce:surname": "Zahra",
+                  "ce:indexed-name": "Zahra S.A."
+                },
+                "@seq": "1",
+                "ce:initials": "S.A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60123802",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60123802"
+                },
+                "ce:surname": "Zahra",
+                "@auid": "7003264340",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7003264340",
+                "@force-array": "true",
+                "ce:indexed-name": "Zahra S.A."
+              },
+              {
+                "ce:given-name": "Harry J.",
+                "preferred-name": {
+                  "ce:given-name": "Harry J.",
+                  "ce:initials": "H.J.",
+                  "ce:surname": "Sapienza",
+                  "ce:indexed-name": "Sapienza H.J."
+                },
+                "@seq": "2",
+                "ce:initials": "H.J.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Sapienza",
+                "@auid": "6602879385",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6602879385",
+                "@force-array": "true",
+                "ce:indexed-name": "Sapienza H.J."
+              },
+              {
+                "ce:given-name": "Per",
+                "preferred-name": {
+                  "ce:given-name": "Per",
+                  "ce:initials": "P.",
+                  "ce:surname": "Davidsson",
+                  "ce:indexed-name": "Davidsson P."
+                },
+                "@seq": "3",
+                "ce:initials": "P.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Davidsson",
+                "@auid": "7006888337",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7006888337",
+                "@force-array": "true",
+                "ce:indexed-name": "Davidsson P."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-78651103870",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "32",
+              "@issue": "3"
+            },
+            "pagerange": {
+              "@first": "254",
+              "@last": "279"
+            }
+          },
+          "prism:coverDate": "2011-01-01",
+          "sourcetitle": "Strategic Management Journal",
+          "type": "resolvedReference",
+          "title": "Clarifying the conditions and limits of the contributions of ordinary and dynamic capabilities to relative firm performance",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/78651103870",
+          "citedby-count": "541",
+          "scopus-id": "78651103870",
+          "@id": "28",
+          "ce:doi": "10.1002/smj.882",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Paul L.",
+                "preferred-name": {
+                  "ce:given-name": "Paul L.",
+                  "ce:initials": "P.L.",
+                  "ce:surname": "Drnevich",
+                  "ce:indexed-name": "Drnevich P.L."
+                },
+                "@seq": "1",
+                "ce:initials": "P.L.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60119544",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60119544"
+                },
+                "ce:surname": "Drnevich",
+                "@auid": "13002632500",
+                "author-url": "https://api.elsevier.com/content/author/author_id/13002632500",
+                "@force-array": "true",
+                "ce:indexed-name": "Drnevich P.L."
+              },
+              {
+                "ce:given-name": "Aldas P.",
+                "preferred-name": {
+                  "ce:given-name": "Aldas P.",
+                  "ce:initials": "A.P.",
+                  "ce:surname": "Kriauciunas",
+                  "ce:indexed-name": "Kriauciunas A.P."
+                },
+                "@seq": "2",
+                "ce:initials": "A.P.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60116251",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60116251"
+                },
+                "ce:surname": "Kriauciunas",
+                "@auid": "14024539200",
+                "author-url": "https://api.elsevier.com/content/author/author_id/14024539200",
+                "@force-array": "true",
+                "ce:indexed-name": "Kriauciunas A.P."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0002019407",
+          "scopus-id": "0002019407",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "8"
+            }
+          },
+          "derivedSequence": "29",
+          "sourcetitle": "Eur. J. Work Organ. Psychol",
+          "@id": "29",
+          "type": "originalReference/other",
+          "title": "Two decades of research and development in transformational leadership",
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "B.M.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Bass",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Bass B.M."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0002019407"
+        },
+        {
+          "scopus-eid": "2-s2.0-31344479253",
+          "pubmed-id": "16435950",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "91",
+              "@issue": "1"
+            },
+            "pagerange": {
+              "@first": "202",
+              "@last": "210"
+            }
+          },
+          "prism:coverDate": "2006-01-01",
+          "sourcetitle": "Journal of Applied Psychology",
+          "type": "resolvedReference",
+          "title": "Transformational leadership, initiating structure, and substitutes for leadership: A longitudinal study of research and development project team performance",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/31344479253",
+          "citedby-count": "391",
+          "scopus-id": "31344479253",
+          "@id": "30",
+          "ce:doi": "10.1037/0021-9010.91.1.202",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Robert T.",
+                "preferred-name": {
+                  "ce:given-name": "Robert T.",
+                  "ce:initials": "R.T.",
+                  "ce:surname": "Keller",
+                  "ce:indexed-name": "Keller R.T."
+                },
+                "@seq": "1",
+                "ce:initials": "R.T.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60005837",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60005837"
+                },
+                "ce:surname": "Keller",
+                "@auid": "7401435180",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7401435180",
+                "@force-array": "true",
+                "ce:indexed-name": "Keller R.T."
+              },
+              {
+                "ce:given-name": "Robert T.",
+                "preferred-name": {
+                  "ce:given-name": "Robert T.",
+                  "ce:initials": "R.T.",
+                  "ce:surname": "Keller",
+                  "ce:indexed-name": "Keller R.T."
+                },
+                "@seq": "1",
+                "ce:initials": "R.T.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60151362",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60151362"
+                },
+                "ce:surname": "Keller",
+                "@auid": "7401435180",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7401435180",
+                "@force-array": "true",
+                "ce:indexed-name": "Keller R.T."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-85070345692",
+          "scopus-id": "85070345692",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "21"
+            }
+          },
+          "derivedSequence": "31",
+          "sourcetitle": "Creat. Innov. Manag",
+          "@id": "31",
+          "type": "originalReference/other",
+          "title": "How to manage creativity time? Results from a social psychological time model lab experiment on individual creative and routine performance",
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "A.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Brem",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Brem A."
+              },
+              {
+                "@seq": "2",
+                "ce:initials": "V.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Utikal",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Utikal V."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85070345692"
+        },
+        {
+          "scopus-eid": "2-s2.0-80052967171",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "22",
+              "@issue": "5"
+            },
+            "pagerange": {
+              "@first": "956",
+              "@last": "974"
+            }
+          },
+          "prism:coverDate": "2011-10-01",
+          "sourcetitle": "Leadership Quarterly",
+          "type": "resolvedReference",
+          "title": "Explaining the heterogeneity of the leadership-innovation relationship: Ambidextrous leadership",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/80052967171",
+          "citedby-count": "932",
+          "scopus-id": "80052967171",
+          "@id": "32",
+          "ce:doi": "10.1016/j.leaqua.2011.07.014",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Kathrin",
+                "preferred-name": {
+                  "ce:given-name": "Kathrin",
+                  "ce:initials": "K.",
+                  "ce:surname": "Rosing",
+                  "ce:indexed-name": "Rosing K."
+                },
+                "@seq": "1",
+                "ce:initials": "K.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60072202",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60072202"
+                },
+                "ce:surname": "Rosing",
+                "@auid": "36984372800",
+                "author-url": "https://api.elsevier.com/content/author/author_id/36984372800",
+                "@force-array": "true",
+                "ce:indexed-name": "Rosing K."
+              },
+              {
+                "ce:given-name": "Michael",
+                "preferred-name": {
+                  "ce:given-name": "Michael",
+                  "ce:initials": "M.",
+                  "ce:surname": "Frese",
+                  "ce:indexed-name": "Frese M."
+                },
+                "@seq": "2",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60072202",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60072202"
+                },
+                "ce:surname": "Frese",
+                "@auid": "7005597960",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7005597960",
+                "@force-array": "true",
+                "ce:indexed-name": "Frese M."
+              },
+              {
+                "ce:given-name": "Michael",
+                "preferred-name": {
+                  "ce:given-name": "Michael",
+                  "ce:initials": "M.",
+                  "ce:surname": "Frese",
+                  "ce:indexed-name": "Frese M."
+                },
+                "@seq": "2",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60106360",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60106360"
+                },
+                "ce:surname": "Frese",
+                "@auid": "7005597960",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7005597960",
+                "@force-array": "true",
+                "ce:indexed-name": "Frese M."
+              },
+              {
+                "ce:given-name": "Andreas",
+                "preferred-name": {
+                  "ce:given-name": "Andreas",
+                  "ce:initials": "A.",
+                  "ce:surname": "Bausch",
+                  "ce:indexed-name": "Bausch A."
+                },
+                "@seq": "3",
+                "ce:initials": "A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60017134",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60017134"
+                },
+                "ce:surname": "Bausch",
+                "@auid": "35306628000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/35306628000",
+                "@force-array": "true",
+                "ce:indexed-name": "Bausch A."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-0003735394",
+          "scopus-id": "0003735394",
+          "@_fa": "true",
+          "volisspag": null,
+          "derivedSequence": "33",
+          "sourcetitle": "Developing Expert Leadership for Future Schools",
+          "@id": "33",
+          "type": "originalReference/other",
+          "title": null,
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "K.O.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Leithwood",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Leithwood K.O."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/0003735394"
+        },
+        {
+          "scopus-eid": "2-s2.0-77955173492",
+          "scopus-id": "77955173492",
+          "@_fa": "true",
+          "volisspag": null,
+          "derivedSequence": "34",
+          "sourcetitle": "Marketing Theory: Foundations. Controversy, Strategy, Resource-Advantage Theory",
+          "@id": "34",
+          "type": "originalReference/other",
+          "title": null,
+          "author-list": {
+            "author": [
+              {
+                "@seq": "1",
+                "ce:initials": "S.D.",
+                "@_fa": "true",
+                "affiliation": null,
+                "ce:surname": "Hunt",
+                "author-url": null,
+                "@force-array": "true",
+                "ce:indexed-name": "Hunt S.D."
+              }
+            ]
+          },
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/77955173492"
+        },
+        {
+          "scopus-eid": "2-s2.0-85019028374",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "76"
+            },
+            "pagerange": {
+              "@first": "127",
+              "@last": "135"
+            }
+          },
+          "prism:coverDate": "2017-07-01",
+          "sourcetitle": "Journal of Business Research",
+          "type": "resolvedReference",
+          "title": "Building innovation capability: The role of top management innovativeness and relative-exploration orientation",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85019028374",
+          "citedby-count": "129",
+          "scopus-id": "85019028374",
+          "@id": "35",
+          "ce:doi": "10.1016/j.jbusres.2017.03.019",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Xinchun",
+                "preferred-name": {
+                  "ce:given-name": "Xinchun",
+                  "ce:initials": "X.",
+                  "ce:surname": "Wang",
+                  "ce:indexed-name": "Wang X."
+                },
+                "@seq": "1",
+                "ce:initials": "X.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60026161",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60026161"
+                },
+                "ce:surname": "Wang",
+                "@auid": "57194176399",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57194176399",
+                "@force-array": "true",
+                "ce:indexed-name": "Wang X."
+              },
+              {
+                "ce:given-name": "Mayukh",
+                "preferred-name": {
+                  "ce:given-name": "Mayukh",
+                  "ce:initials": "M.",
+                  "ce:surname": "Dass",
+                  "ce:indexed-name": "Dass M."
+                },
+                "@seq": "2",
+                "ce:initials": "M.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60123664",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60123664"
+                },
+                "ce:surname": "Dass",
+                "@auid": "6602860626",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6602860626",
+                "@force-array": "true",
+                "ce:indexed-name": "Dass M."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-84904123606",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "87"
+            },
+            "pagerange": {
+              "@first": "152",
+              "@last": "163"
+            }
+          },
+          "prism:coverDate": "2014-01-01",
+          "sourcetitle": "Technological Forecasting and Social Change",
+          "type": "resolvedReference",
+          "title": "How unlearning affects radical innovation: The dynamics of social capital and slack resources",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/84904123606",
+          "citedby-count": "86",
+          "scopus-id": "84904123606",
+          "@id": "36",
+          "ce:doi": "10.1016/j.techfore.2013.12.014",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Kuo-Pin",
+                "preferred-name": {
+                  "ce:given-name": "Kuo Pin",
+                  "ce:initials": "K.P.",
+                  "ce:surname": "Yang",
+                  "ce:indexed-name": "Yang K.P."
+                },
+                "@seq": "1",
+                "ce:initials": "K.-P.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60011975",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60011975"
+                },
+                "ce:surname": "Yang",
+                "@auid": "14059208000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/14059208000",
+                "@force-array": "true",
+                "ce:indexed-name": "Yang K.-P."
+              },
+              {
+                "ce:given-name": "Christine",
+                "preferred-name": {
+                  "ce:given-name": "Christine",
+                  "ce:initials": "C.",
+                  "ce:surname": "Chou",
+                  "ce:indexed-name": "Chou C."
+                },
+                "@seq": "2",
+                "ce:initials": "C.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60011975",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60011975"
+                },
+                "ce:surname": "Chou",
+                "@auid": "24070086800",
+                "author-url": "https://api.elsevier.com/content/author/author_id/24070086800",
+                "@force-array": "true",
+                "ce:indexed-name": "Chou C."
+              },
+              {
+                "ce:given-name": "Yu-Jen",
+                "preferred-name": {
+                  "ce:given-name": "Yu Jen",
+                  "ce:initials": "Y.J.",
+                  "ce:surname": "Chiu",
+                  "ce:indexed-name": "Chiu Y.J."
+                },
+                "@seq": "3",
+                "ce:initials": "Y.-J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60011975",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60011975"
+                },
+                "ce:surname": "Chiu",
+                "@auid": "56263479400",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56263479400",
+                "@force-array": "true",
+                "ce:indexed-name": "Chiu Y.-J."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-24944586304",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "48",
+              "@issue": "4"
+            },
+            "pagerange": {
+              "@first": "661",
+              "@last": "676"
+            }
+          },
+          "prism:coverDate": "2005-01-01",
+          "sourcetitle": "Academy of Management Journal",
+          "type": "resolvedReference",
+          "title": "Slack resources and the performance of privately held firms",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/24944586304",
+          "citedby-count": "1022",
+          "scopus-id": "24944586304",
+          "@id": "37",
+          "ce:doi": "10.5465/AMJ.2005.17843944",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Gerard",
+                "preferred-name": {
+                  "ce:given-name": "Gerard",
+                  "ce:initials": "G.",
+                  "ce:surname": "George",
+                  "ce:indexed-name": "George G."
+                },
+                "@seq": "1",
+                "ce:initials": "G.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60032179",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60032179"
+                },
+                "ce:surname": "George",
+                "@auid": "57201570526",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57201570526",
+                "@force-array": "true",
+                "ce:indexed-name": "George G."
+              },
+              {
+                "ce:given-name": "Gerard",
+                "preferred-name": {
+                  "ce:given-name": "Gerard",
+                  "ce:initials": "G.",
+                  "ce:surname": "George",
+                  "ce:indexed-name": "George G."
+                },
+                "@seq": "1",
+                "ce:initials": "G.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60032179",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60032179"
+                },
+                "ce:surname": "George",
+                "@auid": "57201570526",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57201570526",
+                "@force-array": "true",
+                "ce:indexed-name": "George G."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-85061815910",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "28",
+              "@issue": "4"
+            },
+            "pagerange": {
+              "@first": "652",
+              "@last": "663"
+            }
+          },
+          "prism:coverDate": "2019-05-01",
+          "sourcetitle": "Business Strategy and the Environment",
+          "type": "resolvedReference",
+          "title": "Ambidextrous culture, contextual ambidexterity and new product innovations: The role of organizational slack and environmental factors",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85061815910",
+          "citedby-count": "92",
+          "scopus-id": "85061815910",
+          "@id": "38",
+          "ce:doi": "10.1002/bse.2287",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Sher Jahan",
+                "preferred-name": {
+                  "ce:given-name": "Sher Jahan",
+                  "ce:initials": "S.J.",
+                  "ce:surname": "Khan",
+                  "ce:indexed-name": "Khan S.J."
+                },
+                "@seq": "1",
+                "ce:initials": "S.J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60016300",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60016300"
+                },
+                "ce:surname": "Khan",
+                "@auid": "57206668026",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57206668026",
+                "@force-array": "true",
+                "ce:indexed-name": "Khan S.J."
+              },
+              {
+                "ce:given-name": "Ajaz Akbar",
+                "preferred-name": {
+                  "ce:given-name": "Ajaz Akbar",
+                  "ce:initials": "A.A.",
+                  "ce:surname": "Mir",
+                  "ce:indexed-name": "Mir A.A."
+                },
+                "@seq": "2",
+                "ce:initials": "A.A.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60016300",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60016300"
+                },
+                "ce:surname": "Mir",
+                "@auid": "58442862000",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58442862000",
+                "@force-array": "true",
+                "ce:indexed-name": "Mir A.A."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-84894638042",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "31",
+              "@issue": "1"
+            },
+            "pagerange": {
+              "@first": "47",
+              "@last": "68"
+            }
+          },
+          "prism:coverDate": "2014-03-01",
+          "sourcetitle": "Asia Pacific Journal of Management",
+          "type": "resolvedReference",
+          "title": "How does slack affect product innovation in high-tech Chinese firms: The contingent value of entrepreneurial orientation",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/84894638042",
+          "citedby-count": "58",
+          "scopus-id": "84894638042",
+          "@id": "39",
+          "ce:doi": "10.1007/s10490-012-9309-5",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Heng",
+                "preferred-name": {
+                  "ce:given-name": "Heng",
+                  "ce:initials": "H.",
+                  "ce:surname": "Liu",
+                  "ce:indexed-name": "Liu H."
+                },
+                "@seq": "1",
+                "ce:initials": "H.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60021182",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60021182"
+                },
+                "ce:surname": "Liu",
+                "@auid": "56493275800",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56493275800",
+                "@force-array": "true",
+                "ce:indexed-name": "Liu H."
+              },
+              {
+                "ce:given-name": "Heng",
+                "preferred-name": {
+                  "ce:given-name": "Heng",
+                  "ce:initials": "H.",
+                  "ce:surname": "Liu",
+                  "ce:indexed-name": "Liu H."
+                },
+                "@seq": "1",
+                "ce:initials": "H.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60135867",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60135867"
+                },
+                "ce:surname": "Liu",
+                "@auid": "56493275800",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56493275800",
+                "@force-array": "true",
+                "ce:indexed-name": "Liu H."
+              },
+              {
+                "ce:given-name": "Xiu-hao",
+                "preferred-name": {
+                  "ce:given-name": "Xiu hao",
+                  "ce:initials": "X.h.",
+                  "ce:surname": "Ding",
+                  "ce:indexed-name": "Ding X.h."
+                },
+                "@seq": "2",
+                "ce:initials": "X.-H.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60025761",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60025761"
+                },
+                "ce:surname": "Ding",
+                "@auid": "35209678500",
+                "author-url": "https://api.elsevier.com/content/author/author_id/35209678500",
+                "@force-array": "true",
+                "ce:indexed-name": "Ding X.-H."
+              },
+              {
+                "ce:given-name": "Hai",
+                "preferred-name": {
+                  "ce:given-name": "Hai",
+                  "ce:initials": "H.",
+                  "ce:surname": "Guo",
+                  "ce:indexed-name": "Guo H."
+                },
+                "@seq": "3",
+                "ce:initials": "H.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60125448",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60125448"
+                },
+                "ce:surname": "Guo",
+                "@auid": "55255690400",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55255690400",
+                "@force-array": "true",
+                "ce:indexed-name": "Guo H."
+              },
+              {
+                "ce:given-name": "Jin-hui",
+                "preferred-name": {
+                  "ce:given-name": "Jin hui",
+                  "ce:initials": "J.h.",
+                  "ce:surname": "Luo",
+                  "ce:indexed-name": "Luo J.h."
+                },
+                "@seq": "4",
+                "ce:initials": "J.-H.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60018205",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60018205"
+                },
+                "ce:surname": "Luo",
+                "@auid": "35292722900",
+                "author-url": "https://api.elsevier.com/content/author/author_id/35292722900",
+                "@force-array": "true",
+                "ce:indexed-name": "Luo J.-H."
+              }
+            ]
+          }
+        },
+        {
+          "scopus-eid": "2-s2.0-85049871812",
+          "@_fa": "true",
+          "volisspag": {
+            "voliss": {
+              "@volume": "1",
+              "@issue": "4"
+            },
+            "pagerange": {
+              "@first": "207",
+              "@last": "218"
+            }
+          },
+          "prism:coverDate": "2017-12-01",
+          "sourcetitle": "International Journal of Innovation Studies",
+          "type": "resolvedReference",
+          "title": "Do slack resources matter in Chinese firms’ collaborative innovation?",
+          "url": "https://api.elsevier.com/content/abstract/scopus_id/85049871812",
+          "citedby-count": "15",
+          "scopus-id": "85049871812",
+          "@id": "40",
+          "ce:doi": "10.1016/j.ijis.2017.12.001",
+          "author-list": {
+            "author": [
+              {
+                "ce:given-name": "Yinjuan",
+                "preferred-name": {
+                  "ce:given-name": "Yinjuan",
+                  "ce:initials": "Y.",
+                  "ce:surname": "Yang",
+                  "ce:indexed-name": "Yang Y."
+                },
+                "@seq": "1",
+                "ce:initials": "Y.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60103821",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60103821"
+                },
+                "ce:surname": "Yang",
+                "@auid": "55972821500",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55972821500",
+                "@force-array": "true",
+                "ce:indexed-name": "Yang Y."
+              },
+              {
+                "ce:given-name": "Jin",
+                "preferred-name": {
+                  "ce:given-name": "Jin",
+                  "ce:initials": "J.",
+                  "ce:surname": "Chen",
+                  "ce:indexed-name": "Chen J."
+                },
+                "@seq": "2",
+                "ce:initials": "J.",
+                "@_fa": "true",
+                "affiliation": {
+                  "@id": "60122853",
+                  "@href": "https://api.elsevier.com/content/affiliation/affiliation_id/60122853"
+                },
+                "ce:surname": "Chen",
+                "@auid": "54946985800",
+                "author-url": "https://api.elsevier.com/content/author/author_id/54946985800",
+                "@force-array": "true",
+                "ce:indexed-name": "Chen J."
+              }
+            ]
+          }
+        }
+      ],
+      "@total-references": "89",
+      "link": [
+        {
+          "@_fa": "true",
+          "@type": "application/json",
+          "@ref": "self",
+          "@href": "https://api.elsevier.com/content/abstract/eid/2-s2.0-85066948179?startref=1&refcount=40&view=REF"
+        },
+        {
+          "@_fa": "true",
+          "@type": "application/json",
+          "@ref": "first",
+          "@href": "https://api.elsevier.com/content/abstract/eid/2-s2.0-85066948179?startref=1&refcount=40&view=REF"
+        },
+        {
+          "@_fa": "true",
+          "@type": "application/json",
+          "@ref": "next",
+          "@href": "https://api.elsevier.com/content/abstract/eid/2-s2.0-85066948179?startref=41&refcount=40&view=REF"
+        },
+        {
+          "@_fa": "true",
+          "@type": "application/json",
+          "@ref": "last",
+          "@href": "https://api.elsevier.com/content/abstract/eid/2-s2.0-85066948179?startref=49&refcount=40&view=REF"
+        }
+      ]
+    }
+  }
+}
