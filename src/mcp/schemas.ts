@@ -23,6 +23,7 @@ export const SearchPapersSchema = z
         'springer',
         'scopus',
         'crossref',
+        'unpaywall',
         'all'
       ])
       .optional()
@@ -109,7 +110,17 @@ export const SearchIACRSchema = z
 export const DownloadPaperSchema = z
   .object({
     paperId: z.string().min(1),
-    platform: z.enum(['arxiv', 'biorxiv', 'medrxiv', 'semantic', 'iacr', 'scihub', 'springer', 'wiley']),
+    platform: z.enum([
+      'arxiv',
+      'biorxiv',
+      'medrxiv',
+      'semantic',
+      'iacr',
+      'scihub',
+      'springer',
+      'wiley',
+      'unpaywall'
+    ]),
     savePath: z.string().optional()
   })
   .strip();
@@ -127,7 +138,7 @@ export const SearchGoogleScholarSchema = z
 export const GetPaperByDoiSchema = z
   .object({
     doi: z.string().min(1),
-    platform: z.enum(['arxiv', 'webofscience', 'all']).optional().default('all')
+    platform: z.enum(['arxiv', 'webofscience', 'unpaywall', 'crossref', 'all']).optional().default('all')
   })
   .strip();
 
@@ -208,6 +219,15 @@ export const GetPlatformStatusSchema = z
   })
   .strip();
 
+export const SearchUnpaywallSchema = z
+  .object({
+    query: z.string().min(1),
+    maxResults: z.number().int().min(1).max(50).optional().default(10),
+    year: z.string().optional(),
+    openAccess: z.boolean().optional().default(true)
+  })
+  .strip();
+
 export type ToolName =
   | 'search_papers'
   | 'search_arxiv'
@@ -227,7 +247,8 @@ export type ToolName =
   | 'search_springer'
   | 'search_wiley'
   | 'search_scopus'
-  | 'search_crossref';
+  | 'search_crossref'
+  | 'search_unpaywall';
 
 export function parseToolArgs(toolName: ToolName, args: unknown): any {
   switch (toolName) {
@@ -269,6 +290,8 @@ export function parseToolArgs(toolName: ToolName, args: unknown): any {
       return SearchScopusSchema.parse(args);
     case 'search_crossref':
       return SearchCrossrefSchema.parse(args);
+    case 'search_unpaywall':
+      return SearchUnpaywallSchema.parse(args);
     default:
       return args;
   }

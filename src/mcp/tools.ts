@@ -26,10 +26,11 @@ export const TOOLS: Tool[] = [
             'springer',
             'scopus',
             'crossref',
+            'unpaywall',
             'all'
           ],
           description:
-            'Platform to search (default: crossref). Options: arxiv, webofscience/wos, pubmed, biorxiv, medrxiv, semantic, iacr, googlescholar/scholar, scihub, sciencedirect, springer, scopus, crossref, or all. Note: Wiley only supports PDF download by DOI, use download_paper instead.'
+            'Platform to search (default: crossref). Options: arxiv, webofscience/wos, pubmed, biorxiv, medrxiv, semantic, iacr, googlescholar/scholar, scihub, sciencedirect, springer, scopus, crossref, unpaywall, or all. Note: Wiley only supports PDF download by DOI, use download_paper instead.'
         },
         maxResults: {
           type: 'number',
@@ -252,10 +253,10 @@ export const TOOLS: Tool[] = [
     inputSchema: {
       type: 'object',
       properties: {
-        paperId: { type: 'string', description: 'Paper ID (e.g., arXiv ID, DOI for Sci-Hub)' },
+        paperId: { type: 'string', description: 'Paper ID (e.g., arXiv ID, DOI for Sci-Hub/Unpaywall)' },
         platform: {
           type: 'string',
-          enum: ['arxiv', 'biorxiv', 'medrxiv', 'semantic', 'iacr', 'scihub', 'springer', 'wiley'],
+          enum: ['arxiv', 'biorxiv', 'medrxiv', 'semantic', 'iacr', 'scihub', 'springer', 'wiley', 'unpaywall'],
           description: 'Platform where the paper is from'
         },
         savePath: {
@@ -304,8 +305,9 @@ export const TOOLS: Tool[] = [
         doi: { type: 'string', description: 'DOI (Digital Object Identifier)' },
         platform: {
           type: 'string',
-          enum: ['arxiv', 'webofscience', 'all'],
-          description: 'Platform to search'
+          enum: ['arxiv', 'webofscience', 'unpaywall', 'crossref', 'all'],
+          description:
+            'Platform to search (default: all). Use "unpaywall" specifically to check for a legal open-access copy.'
         }
       },
       required: ['doi']
@@ -486,6 +488,32 @@ export const TOOLS: Tool[] = [
           type: 'string',
           enum: ['asc', 'desc'],
           description: 'Sort order: ascending or descending'
+        }
+      },
+      required: ['query']
+    }
+  },
+  {
+    name: 'search_unpaywall',
+    description:
+      'Search Unpaywall for legally available open-access versions of papers (institutional repositories, ' +
+      'publisher OA/hybrid/bronze copies, author self-archived preprints). Free, no API key, requires only a ' +
+      'contact email. Does not bypass paywalls — returns only legitimately hosted copies. Use download_paper ' +
+      'with platform="unpaywall" and a DOI to fetch the PDF once found.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        query: { type: 'string', description: 'Search query string (title/keywords) or a DOI' },
+        maxResults: {
+          type: 'number',
+          minimum: 1,
+          maximum: 50,
+          description: 'Maximum number of results to return'
+        },
+        year: { type: 'string', description: 'Year filter (e.g., "2023", "2020-2023"), applied client-side' },
+        openAccess: {
+          type: 'boolean',
+          description: 'Only return results with a known open-access copy (default: true)'
         }
       },
       required: ['query']

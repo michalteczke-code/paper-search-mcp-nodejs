@@ -430,6 +430,23 @@ Total available: ${(searchers.semantic as any).lastTotalResults||0}\n\nAPI Statu
       );
     }
 
+    case 'search_unpaywall': {
+      const { query, maxResults, year, openAccess } = args;
+      const results = await searchers.unpaywall.search(query, {
+        maxResults,
+        year,
+        openAccess
+      });
+
+      return jsonTextResponse(
+        `Found ${results.length} Unpaywall papers (open access: ${openAccess !== false}).\n\n${JSON.stringify(
+          results.map((paper: Paper) => PaperFactory.toDict(paper)),
+          null,
+          2
+        )}`
+      );
+    }
+
     case 'get_platform_status': {
       const { validate } = args;
       const statusInfo: any[] = [];

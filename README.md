@@ -2,17 +2,17 @@
 
 ## English|[中文](README-sc.md)
 
-A Node.js Model Context Protocol (MCP) server for searching and downloading academic papers from multiple sources, including arXiv, Web of Science, PubMed, Google Scholar, Sci-Hub, ScienceDirect, Springer, Wiley, Scopus, Crossref, and **14 academic platforms** in total.
+A Node.js Model Context Protocol (MCP) server for searching and downloading academic papers from multiple sources, including arXiv, Web of Science, PubMed, Google Scholar, Sci-Hub, ScienceDirect, Springer, Wiley, Scopus, Crossref, Unpaywall, and **15 academic platforms** in total.
 
 ![Node.js](https://img.shields.io/badge/node.js->=18.0.0-green.svg)
 ![TypeScript](https://img.shields.io/badge/typescript-^5.5.3-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Platforms](https://img.shields.io/badge/platforms-14-brightgreen.svg)
+![Platforms](https://img.shields.io/badge/platforms-15-brightgreen.svg)
 ![Version](https://img.shields.io/badge/version-0.2.6-blue.svg)
 
 ## ✨ Key Features
 
-- **🌍 14 Academic Platforms**: arXiv, Web of Science, PubMed, Google Scholar, bioRxiv, medRxiv, Semantic Scholar, IACR ePrint, Sci-Hub, ScienceDirect, Springer Nature, Wiley, Scopus, Crossref
+- **🌍 15 Academic Platforms**: arXiv, Web of Science, PubMed, Google Scholar, bioRxiv, medRxiv, Semantic Scholar, IACR ePrint, Sci-Hub, ScienceDirect, Springer Nature, Wiley, Scopus, Crossref, Unpaywall
 - **🔗 MCP Protocol Integration**: Seamless integration with Claude Desktop and other AI assistants
 - **📊 Unified Data Model**: Standardized paper format across all platforms
 - **⚡ High-Performance Search**: Concurrent search with intelligent rate limiting
@@ -39,6 +39,7 @@ A Node.js Model Context Protocol (MCP) server for searching and downloading acad
 | **Springer Nature** | ✅ | ✅* | ❌ | ❌ | ✅ Required | Dual API: Meta v2 & OpenAccess |
 | **Wiley** | ❌ | ✅ | ✅ | ❌ | ✅ Required | TDM API: DOI-based PDF download only |
 | **Scopus** | ✅ | ❌ | ❌ | ✅ | ✅ Required | Largest citation database |
+| **Unpaywall** | ✅ | ✅* | ❌ | ❌ | ❌ (email only) | Legal open-access lookup by DOI/query |
 
 ✅ Supported | ❌ Not supported | 🟡 Optional | ✅* Open Access only
 
@@ -48,7 +49,7 @@ A Node.js Model Context Protocol (MCP) server for searching and downloading acad
 
 This project includes integrations that may have **legal, contractual (ToS), and ethical** constraints. You are responsible for ensuring your usage complies with applicable laws, institutional policies, and third‑party terms.
 
-- **Sci-Hub**: May provide access to copyrighted works without authorization in many jurisdictions. Use only when you have the legal right to access the content (e.g., open access, author‑provided copies, or licensed institutional access).
+- **Sci-Hub**: May provide access to copyrighted works without authorization in many jurisdictions. Use only when you have the legal right to access the content (e.g., open access, author‑provided copies, or licensed institutional access). **Prefer `search_unpaywall` / `download_paper` with `platform="unpaywall"` instead** — it only surfaces copies that rightsholders (publishers, repositories, authors) have legitimately made open access, so there is no legal ambiguity.
 - **Google Scholar**: This integration relies on automated fetching/parsing and may violate Google's Terms of Service or trigger blocking/rate limits. Prefer official APIs or metadata sources (e.g., Crossref, Semantic Scholar) when ToS compliance is required.
 
 ## 🚀 Quick Start
@@ -196,7 +197,7 @@ search_papers({
 - `platform: "crossref"` (default) - Free API with extensive scholarly metadata coverage
 - `platform: "all"` - Randomly selects one platform for efficient, focused results
 - Specific platform - Searches only that platform
-- Available platforms: `crossref`, `arxiv`, `webofscience`/`wos`, `pubmed`, `biorxiv`, `medrxiv`, `semantic`, `iacr`, `googlescholar`/`scholar`, `scihub`, `sciencedirect`, `springer`, `scopus`
+- Available platforms: `crossref`, `arxiv`, `webofscience`/`wos`, `pubmed`, `biorxiv`, `medrxiv`, `semantic`, `iacr`, `googlescholar`/`scholar`, `scihub`, `sciencedirect`, `springer`, `scopus`, `unpaywall`
 - Note: `wiley` only supports PDF download by DOI, not keyword search
 
 ### `search_crossref`
@@ -210,6 +211,27 @@ search_crossref({
   author: "Smith",
   sortBy: "relevance",  // or "date", "citations"
   sortOrder: "desc"
+})
+```
+
+### `search_unpaywall`
+Find legally hosted open-access copies of papers by keyword or DOI. Only returns copies rightsholders themselves made open access (repositories, publisher OA/hybrid/bronze, author preprints) — no paywall bypass. Requires only a contact email (`UNPAYWALL_EMAIL`), no API key.
+
+```typescript
+search_unpaywall({
+  query: "climate change adaptation",
+  maxResults: 10,
+  year: "2020-2023",
+  openAccess: true  // default: only return results with a known OA copy
+})
+```
+
+To fetch the actual PDF once you have a DOI:
+```typescript
+download_paper({
+  paperId: "10.1038/nature12373",
+  platform: "unpaywall",
+  savePath: "./downloads"
 })
 ```
 
@@ -443,7 +465,8 @@ src/
 │   ├── SpringerSearcher.ts   # Springer Nature searcher (Meta v2 & OpenAccess APIs)
 │   ├── WileySearcher.ts      # Wiley TDM API (DOI-based PDF download only)
 │   ├── ScopusSearcher.ts     # Scopus citation database searcher
-│   └── CrossrefSearcher.ts   # Crossref API searcher (default platform)
+│   ├── CrossrefSearcher.ts   # Crossref API searcher (default platform)
+│   └── UnpaywallSearcher.ts  # Unpaywall legal open-access lookup by DOI/query
 ├── utils/
 │   └── RateLimiter.ts        # Token bucket rate limiter
 └── server.ts                 # MCP server main file

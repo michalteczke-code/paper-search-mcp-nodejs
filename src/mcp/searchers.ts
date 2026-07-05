@@ -11,6 +11,7 @@ import { SpringerSearcher } from '../platforms/SpringerSearcher.js';
 import { WileySearcher } from '../platforms/WileySearcher.js';
 import { ScopusSearcher } from '../platforms/ScopusSearcher.js';
 import { CrossrefSearcher } from '../platforms/CrossrefSearcher.js';
+import { UnpaywallSearcher } from '../platforms/UnpaywallSearcher.js';
 import { logDebug } from '../utils/Logger.js';
 
 export interface Searchers {
@@ -30,6 +31,7 @@ export interface Searchers {
   wiley: WileySearcher;
   scopus: ScopusSearcher;
   crossref: CrossrefSearcher;
+  unpaywall: UnpaywallSearcher;
 }
 
 let searchers: Searchers | null = null;
@@ -59,6 +61,7 @@ export function initializeSearchers(): Searchers {
     const scopusSearcher = new ScopusSearcher(process.env.ELSEVIER_API_KEY);  
 
   const crossrefSearcher = new CrossrefSearcher(process.env.CROSSREF_MAILTO);
+  const unpaywallSearcher = new UnpaywallSearcher(process.env.UNPAYWALL_EMAIL);
   searchers = {
     arxiv: arxivSearcher,
     webofscience: wosSearcher,
@@ -75,7 +78,8 @@ export function initializeSearchers(): Searchers {
     springer: springerSearcher,
     wiley: wileySearcher,
     scopus: scopusSearcher,
-    crossref: crossrefSearcher
+    crossref: crossrefSearcher,
+    unpaywall: unpaywallSearcher
   };
 
   logDebug('Searchers initialized successfully');
