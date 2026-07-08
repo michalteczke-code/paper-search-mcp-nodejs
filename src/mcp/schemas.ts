@@ -24,6 +24,7 @@ export const SearchPapersSchema = z
         'scopus',
         'crossref',
         'unpaywall',
+        'openalex',
         'all'
       ])
       .optional()
@@ -228,6 +229,14 @@ export const SearchUnpaywallSchema = z
   })
   .strip();
 
+export const SearchOpenAlexSchema = z
+  .object({
+    query: z.string().min(1),
+    maxResults: z.number().int().min(1).max(100).optional().default(25),
+    year: z.string().optional()
+  })
+  .strip();
+
 export type ToolName =
   | 'search_papers'
   | 'search_arxiv'
@@ -248,7 +257,8 @@ export type ToolName =
   | 'search_wiley'
   | 'search_scopus'
   | 'search_crossref'
-  | 'search_unpaywall';
+  | 'search_unpaywall'
+  | 'search_openalex';
 
 export function parseToolArgs(toolName: ToolName, args: unknown): any {
   switch (toolName) {
@@ -292,6 +302,8 @@ export function parseToolArgs(toolName: ToolName, args: unknown): any {
       return SearchCrossrefSchema.parse(args);
     case 'search_unpaywall':
       return SearchUnpaywallSchema.parse(args);
+    case 'search_openalex':
+      return SearchOpenAlexSchema.parse(args);
     default:
       return args;
   }

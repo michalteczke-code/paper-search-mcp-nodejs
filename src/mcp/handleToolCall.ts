@@ -447,6 +447,23 @@ Total available: ${(searchers.semantic as any).lastTotalResults||0}\n\nAPI Statu
       );
     }
 
+    case 'search_openalex': {
+      const { query, maxResults, year } = args;
+      if (!process.env.OPENALEX_API_KEY) {
+        throw new Error('OpenAlex API key not configured. Please set OPENALEX_API_KEY environment variable (free — https://openalex.org/settings/api).');
+      }
+
+      const results = await searchers.openalex.search(query, { maxResults, year } as any);
+
+      return jsonTextResponse(
+        `Found ${results.length} of ${(searchers.openalex as any).lastTotalResults||0} OpenAlex works.\nTotal available: ${(searchers.openalex as any).lastTotalResults||0}\n\n${JSON.stringify(
+          results.map((paper: Paper) => PaperFactory.toDict(paper)),
+          null,
+          2
+        )}`
+      );
+    }
+
     case 'get_platform_status': {
       const { validate } = args;
       const statusInfo: any[] = [];

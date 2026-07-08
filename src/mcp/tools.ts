@@ -27,6 +27,7 @@ export const TOOLS: Tool[] = [
             'scopus',
             'crossref',
             'unpaywall',
+            'openalex',
             'all'
           ],
           description:
@@ -489,6 +490,28 @@ export const TOOLS: Tool[] = [
           enum: ['asc', 'desc'],
           description: 'Sort order: ascending or descending'
         }
+      },
+      required: ['query']
+    }
+  },
+  {
+    name: 'search_openalex',
+    description:
+      'Search OpenAlex, a fully open (CC0) index of scholarly works — an open alternative to Scopus/Web of ' +
+      'Science with broader coverage. Requires a free API key (OPENALEX_API_KEY). Supports boolean search ' +
+      '(AND/OR/NOT, uppercase) and quoted phrases across title/abstract/fulltext. Do NOT use wildcards (*) — ' +
+      'they are rejected by the default stemmed search.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        query: { type: 'string', description: 'Search query string (boolean AND/OR/NOT uppercase, quoted phrases for exact matches, no wildcards)' },
+        maxResults: {
+          type: 'number',
+          minimum: 1,
+          maximum: 100,
+          description: 'Maximum number of results to return'
+        },
+        year: { type: 'string', description: 'Year filter (e.g., "2023", "2020-2023")' }
       },
       required: ['query']
     }

@@ -12,6 +12,7 @@ import { WileySearcher } from '../platforms/WileySearcher.js';
 import { ScopusSearcher } from '../platforms/ScopusSearcher.js';
 import { CrossrefSearcher } from '../platforms/CrossrefSearcher.js';
 import { UnpaywallSearcher } from '../platforms/UnpaywallSearcher.js';
+import { OpenAlexSearcher } from '../platforms/OpenAlexSearcher.js';
 import { logDebug } from '../utils/Logger.js';
 
 export interface Searchers {
@@ -32,6 +33,7 @@ export interface Searchers {
   scopus: ScopusSearcher;
   crossref: CrossrefSearcher;
   unpaywall: UnpaywallSearcher;
+  openalex: OpenAlexSearcher;
 }
 
 let searchers: Searchers | null = null;
@@ -62,6 +64,10 @@ export function initializeSearchers(): Searchers {
 
   const crossrefSearcher = new CrossrefSearcher(process.env.CROSSREF_MAILTO);
   const unpaywallSearcher = new UnpaywallSearcher(process.env.UNPAYWALL_EMAIL);
+  // Wspólny klucz server-side (nie BYOK) — ustalenie z Michałem 08.07.2026, task #33.
+  // OpenAlex (CC0, brak licencji instytucjonalnej) nie niesie ryzyka ToS jak Scopus/SD,
+  // więc dzielenie jednego darmowego klucza między userów jest tu bezpieczne.
+  const openAlexSearcher = new OpenAlexSearcher(process.env.OPENALEX_API_KEY, process.env.OPENALEX_MAILTO);
   searchers = {
     arxiv: arxivSearcher,
     webofscience: wosSearcher,
@@ -79,7 +85,8 @@ export function initializeSearchers(): Searchers {
     wiley: wileySearcher,
     scopus: scopusSearcher,
     crossref: crossrefSearcher,
-    unpaywall: unpaywallSearcher
+    unpaywall: unpaywallSearcher,
+    openalex: openAlexSearcher
   };
 
   logDebug('Searchers initialized successfully');
